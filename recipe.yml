@@ -1,0 +1,276 @@
+name: 'Drupal Build Starter'
+description: 'A recipe tailored to best practices for kickstarting a new Drupal 10 project.'
+type: 'Site'
+# ############################################################################
+# Install modules
+# ############################################################################
+install:
+  # Core modules
+  - automated_cron
+  - block
+  - block_content
+  - breakpoint
+  - ckeditor5
+  - config
+  - content_moderation
+  - contextual
+  - datetime
+  - dblog
+  - dynamic_page_cache
+  - editor
+  - field
+  - field_ui
+  - file
+  - filter
+  - help
+  - help_topics
+  - image
+  - link
+  - media
+  - media_library
+  - menu_link_content
+  - menu_ui
+  - migrate
+  - node
+  - options
+  - page_cache
+  - path
+  - path_alias
+  - responsive_image
+  - sdc
+  - search
+  - serialization
+  - settings_tray
+  - shortcut
+  - taxonomy
+  - telephone
+  - text
+  - toolbar
+  - tour
+  - update
+  - user
+  - views
+  - views_ui
+  - workflows
+  # Core themes
+  - claro
+  # Contrib modules
+  - access_unpublished
+  - actions_permissions
+  - address
+  - allowed_formats
+  - better_exposed_filters
+  - block_class
+  - block_field
+  - checklistapi
+  - components
+  - config_filter
+  - config_ignore
+  - config_split
+  - critical_css
+  - crop
+  - csp
+  - csv_serialization
+  - ctools
+  - diff
+  - easy_breadcrumb
+  - editor_advanced_link
+  - emulsify_twig
+  - entity_reference_revisions
+  - entity_usage
+  - entityqueue
+  - environment_indicator
+  - environment_indicator_ribbon
+  - facets
+  - fancy_file_delete
+  - field_group
+  - focal_point
+  - google_tag
+  - key
+  - launch_checklist
+  - link_attributes
+  - linkit
+  - maxlength
+  - media_library_edit
+  - menu_block
+  - menu_link_attributes
+  - metatag
+  - metatag_open_graph
+  - metatag_twitter_cards
+  - metatag_verification
+  - migrate_plus
+  - migrate_tools
+  - obfuscate
+  - pantheon_advanced_page_cache
+  - paragraphs
+  - paragraphs_edit
+  - pathauto
+  - permissions_filter
+  - quick_node_clone
+  - rabbit_hole
+  - rh_node
+  - redirect
+  - redirect_404
+  - redis
+  - resource_hints
+  - responsive_tables_filter
+  - revision_log_default
+  - rrssb
+  - scheduler
+  - scheduler_content_moderation_integration
+  - schema_metatag
+  - search_api
+  - search_api_autocomplete
+  - search_api_pantheon
+  - search_api_solr
+  - seckit
+  - seo_checklist
+  - simple_sitemap
+  - sitemap
+  - smart_date
+  - smart_trim
+  - token
+  - token_or
+  - twig_tweak
+  - views_unpublished
+  - views_bulk_edit
+  - views_bulk_operations
+  - views_data_export
+  - views_infinite_scroll
+  - viewsreference
+  - webform
+# ##############################################################################
+# Import only the configuration we want.
+# ##############################################################################
+config:
+  import:
+    # Core.
+    automated_cron: '*'
+    block: '*'
+    block_content:
+      # Lets bring in the view to list cusotm blocks.
+      # But not the default custom block itself.
+      - views.view.block_content.yml
+    content_moderation: '*'
+    dblog: '*'
+    field_ui: '*'
+    file:
+      # Import file settings config, but not files view.
+      - file.settings
+    filter: '*'
+    image:
+      # Import image settings and Large/Thumbnail. Do not need Medium/Wide.
+      - image.settings
+      - image.style.large
+      - image.style.thumbnail
+    media: '*'
+    media_library: '*'
+    menu_ui: '*'
+    pathauto: '*'
+    redirect:
+      - redirect.settings
+      - system.action.redirect_delete_action
+      - views.view.redirect
+    node:
+      # Do not import any Entity View Modes or Body fiels storage.
+      # Do not import Node Settings (use_admin_theme: false)
+      # Import actions we need, not Promote/Sticky.
+      - system.action.node_delete_action
+      - system.action.node_publish_action
+      - system.action.node_save_action
+      - system.action.node_unpublish_action
+      # Import only the admin content view.
+      - views.view.content
+    shortcut: '*'
+    # system. Can we do anything here?
+    # Not sure since it is already installed by minimal.
+    # Same goes for node, block, dblog, page_cache, dynamic_page_cache, and stark.
+    taxonomy: '*'
+    text: '*'
+    update: '*'
+    user:
+      # Don't load and User view modes.
+      # Load Actions.
+      - system.action.user_block_user_action
+      - system.action.user_cancel_user_action
+      - system.action.user_unblock_user_action
+      # User settings
+      - user.flood
+      - user.mail
+      - user.settings
+      # Only load Anonymous role, not Authenticated.
+      - user.role.anonymous
+      # Only load Admin People view, not Who's New/Online.
+      - views.view.user_admin_people
+    views: '*'
+    views_ui: '*'
+    # Contrib.
+    access_unpublished: '*'
+    block_class: '*'
+    config_ignore: '*'
+    crop: '*'
+    diff: '*'
+    easy_breadcrumb: '*'
+    entity_usage: '*'
+    environment_indicator: '*'
+    fancy_file_delete: '*'
+    focal_point: '*'
+    google_tag: '*'
+    launch_checklist: '*'
+    linkit: '*'
+    menu_link_attributes: '*'
+    metatag:
+      # Lets bring in settings, but not any metatag_defaults. We'll bring those in later.
+      - metatag.settings
+    obfuscate: '*'
+    pantheon_advanced_page_cache: '*'
+    paragraphs: '*'
+    pathauto: '*'
+    quick_node_clone: '*'
+    redirect: '*'
+    redirect_404: '*'
+    resource_hints: '*'
+    responsive_tables_filter: '*'
+    rrssb: '*'
+    scheduler: '*'
+    search_api: '*'
+    search_api_autocomplete: '*'
+    search_api_pantheon: '*'
+    search_api_solr: '*'
+    seckit: '*'
+    simple_sitemap: '*'
+    sitemap: '*'
+    smart_date:
+      # We usually only need one date format.
+      - smart_date.smartdate_format.default
+    views_unpublished: '*'
+    views_bulk_edit: '*'
+    # It would be good to cull the Webform configs, but not at this time.
+    webform: '*'
+  # ############################################################################
+  # Here we can alter configuration that is in Drupal already.
+  # ############################################################################
+  actions:
+    # Sets Cron interval to 0.
+    automated_cron.settings:
+      simple_config_update:
+        interval: 0
+    # Updates batch size from 50 to 100.
+    field.settings:
+      simple_config_update:
+        purge_batch_size: 100
+    # Use the admin theme for node editing.
+    node.settings:
+      simple_config_update:
+        use_admin_theme: true
+    # Only Admins can register accounts.
+    user.settings:
+      simple_config_update:
+        register: admin_only
+# ##############################################################################
+# Can we install additional recipes here?  Or only before install section?
+# ##############################################################################
+recipes:
+  - gin-admin-experience
+  # Does not exist yet.
+  # - seo_starter_recipe
