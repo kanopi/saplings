@@ -1,11 +1,6 @@
 # Drupal Build Starter Recipe
 
-This recipe is designed to help start a build project.  In is configured to do
-the following:
-
-- Install the best parts of the Standard Drupal install profile.
-- Disable core modules.
-- Install and configure commonly used contrib modules.
+This recipe is designed to help start a build project.
 
 ## Installation
 
