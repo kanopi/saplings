@@ -179,20 +179,6 @@ config:
     # Same goes for node, block, dblog, page_cache, dynamic_page_cache, and stark.
     taxonomy: '*'
     text: '*'
-    user:
-      # Don't load and User view modes.
-      # Load Actions.
-      - system.action.user_block_user_action
-      - system.action.user_cancel_user_action
-      - system.action.user_unblock_user_action
-      # User settings
-      - user.flood
-      - user.mail
-      - user.settings
-      # Only load Anonymous role, not Authenticated.
-      - user.role.anonymous
-      # Only load Admin People view, not Who's New/Online.
-      - views.view.user_admin_people
     views: '*'
     views_ui: '*'
     # Contrib.
