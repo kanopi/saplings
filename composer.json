@@ -84,7 +84,7 @@
         "drupal/token": "*",
         "drupal/token_or": "*",
         "drupal/twig_tweak": "*",
-        "drupal/views_unpublished": "*",
+        "drupal/view_unpublished": "*",
         "drupal/views_bulk_edit": "*",
         "drupal/views_bulk_operations": "*",
         "drupal/views_data_export": "*",
