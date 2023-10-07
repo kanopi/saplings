@@ -179,7 +179,6 @@ config:
     # Same goes for node, block, dblog, page_cache, dynamic_page_cache, and stark.
     taxonomy: '*'
     text: '*'
-    update: '*'
     user:
       # Don't load and User view modes.
       # Load Actions.
