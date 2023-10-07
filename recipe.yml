@@ -157,7 +157,6 @@ config:
     file:
       # Import file settings config, but not files view.
       - file.settings
-    filter: '*'
     image:
       # Import image settings and Large/Thumbnail. Do not need Medium/Wide.
       - image.settings
@@ -177,8 +176,6 @@ config:
       # Import only the admin content view.
       - views.view.content
     shortcut: '*'
-    # system. Can we do anything here?
-    # Not sure since it is already installed by minimal.
     # Same goes for node, block, dblog, page_cache, dynamic_page_cache, and stark.
     taxonomy: '*'
     text: '*'
