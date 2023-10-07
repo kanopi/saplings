@@ -21,7 +21,6 @@
         "drupal/config_ignore": "*",
         "drupal/config_split": "*",
         "drupal/csp": "*",
-        "drupal/pathauto": "*",
         "drupal/checklistapi": "*",
         "drupal/components": "*",
         "drupal/critical_css": "*",
