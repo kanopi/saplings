@@ -132,7 +132,7 @@ install:
   - token
   - token_or
   - twig_tweak
-  - views_unpublished
+  - view_unpublished
   - views_bulk_edit
   - views_bulk_operations
   - views_data_export
@@ -241,7 +241,7 @@ config:
     smart_date:
       # We usually only need one date format.
       - smart_date.smartdate_format.default
-    views_unpublished: '*'
+    view_unpublished: '*'
     views_bulk_edit: '*'
     # It would be good to cull the Webform configs, but not at this time.
     webform: '*'
