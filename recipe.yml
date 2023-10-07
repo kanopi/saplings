@@ -172,7 +172,7 @@ config:
       - system.action.redirect_delete_action
       - views.view.redirect
     node:
-      # Do not import any Entity View Modes or Body fiels storage.
+      # Do not import any Entity View Modes or Body field storage.
       # Do not import Node Settings (use_admin_theme: false)
       # Import actions we need, not Promote/Sticky.
       - system.action.node_delete_action
