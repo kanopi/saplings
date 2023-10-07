@@ -166,11 +166,6 @@ config:
     media: '*'
     media_library: '*'
     menu_ui: '*'
-    pathauto: '*'
-    redirect:
-      - redirect.settings
-      - system.action.redirect_delete_action
-      - views.view.redirect
     node:
       # Do not import any Entity View Modes or Body field storage.
       # Do not import Node Settings (use_admin_theme: false)
@@ -227,7 +222,10 @@ config:
     paragraphs: '*'
     pathauto: '*'
     quick_node_clone: '*'
-    redirect: '*'
+    redirect:
+      - redirect.settings
+      - system.action.redirect_delete_action
+      - views.view.redirect
     redirect_404: '*'
     resource_hints: '*'
     responsive_tables_filter: '*'
