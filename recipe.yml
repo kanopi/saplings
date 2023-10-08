@@ -173,7 +173,11 @@ config:
       - views.view.content
     shortcut: '*'
     # Same goes for node, block, dblog, page_cache, dynamic_page_cache, and stark.
-    taxonomy: '*'
+    taxonomy:
+      - core.entity_view_mode.taxonomy_term.full
+      - system.action.taxonomy_term_publish_action
+      - system.action.taxonomy_term_unpublish_action
+      - taxonomy.settings
     text: '*'
     views: '*'
     views_ui: '*'
