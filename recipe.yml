@@ -250,7 +250,7 @@ config:
 # ##############################################################################
 # Can we install additional recipes here?  Or only before install section?
 # ##############################################################################
-recipes:
-  - gin-admin-experience
+# recipes:
+#   - gin-admin-experience
   # Does not exist yet.
   # - seo_starter_recipe
