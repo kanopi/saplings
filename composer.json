@@ -93,6 +93,6 @@
         "drupal/views_data_export": "*",
         "drupal/views_infinite_scroll": "*",
         "drupal/viewsreference": "*",
-        "drupal/webform": "*",
+        "drupal/webform": "*"
     }
 }
