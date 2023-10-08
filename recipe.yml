@@ -244,20 +244,6 @@ config:
       simple_config_update:
         interval: 0
     # Blocks.
-    # Set blocks Stark has the we don't have to false.
-    block.block.gin_admin:
-      simple_config_update:
-        status: false
-    block.block.gin_branding:
-      simple_config_update:
-        status: false
-    block.block.gin_local_tasks:
-      simple_config_update:
-        status: false
-    block.block.gin_tools:
-      simple_config_update:
-        status: false
-    # Place Gin blocks we want.
     block.block.gin_help:
       simple_config_update:
         region: help
