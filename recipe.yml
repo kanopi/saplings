@@ -213,7 +213,10 @@ config:
     responsive_tables_filter: '*'
     rrssb: '*'
     scheduler: '*'
-    search_api:
+    search_api: '*'
+    search_api_autocomplete: '*'
+    search_api_pantheon: '*'
+    search_api_solr:
       - search_api_solr.solr_cache.cache_document_default_7_0_0
       - search_api_solr.solr_cache.cache_document_default_9_0_0
       - search_api_solr.solr_cache.cache_fieldvalue_default_7_0_0
@@ -250,9 +253,6 @@ config:
       - search_api_solr.solr_request_handler.request_handler_spell_default_7_0_0
       - search_api_solr.solr_request_handler.request_handler_suggest_default_7_0_0
       - search_api_solr.solr_request_handler.request_handler_tvrh_default_7_0_0
-    search_api_autocomplete: '*'
-    search_api_pantheon: '*'
-    search_api_solr: '*'
     seckit: '*'
     simple_sitemap: '*'
     sitemap: '*'
