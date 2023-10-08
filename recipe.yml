@@ -131,6 +131,7 @@ install:
   - token
   - token_or
   - twig_tweak
+  - ultimate_cron
   - view_unpublished
   - views_bulk_edit
   - views_bulk_operations
