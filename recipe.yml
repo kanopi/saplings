@@ -157,6 +157,7 @@ config:
       # Import image settings and Large/Thumbnail. Do not need Medium/Wide.
       - image.settings
       - image.style.large
+      - image.style.medium
       - image.style.thumbnail
     media: '*'
     media_library: '*'
