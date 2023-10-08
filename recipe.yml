@@ -208,7 +208,11 @@ config:
     resource_hints: '*'
     responsive_tables_filter: '*'
     rrssb: '*'
-    scheduler: '*'
+    scheduler:
+      - scheduler.settings
+      - views.view.scheduler_scheduled_content
+      - views.view.scheduler_scheduled_media
+      - views.view.scheduler_scheduled_taxonomy_term
     seckit: '*'
     simple_sitemap: '*'
     sitemap: '*'
