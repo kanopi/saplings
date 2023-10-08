@@ -243,6 +243,45 @@ config:
     automated_cron.settings:
       simple_config_update:
         interval: 0
+    # Blocks.
+    # Set blocks Stark has the we don't have to false.
+    block.block.gin_admin:
+      simple_config_update:
+        status: false
+    block.block.gin_branding:
+      simple_config_update:
+        status: false
+    block.block.gin_local_tasks:
+      simple_config_update:
+        status: false
+    block.block.gin_tools:
+      simple_config_update:
+        status: false
+    # Place Gin blocks we want.
+    block.block.gin_help:
+      simple_config_update:
+        region: help
+        weight: 0
+    block.block.gin_local_actions:
+      simple_config_update:
+        region: content
+        weight: -10
+    block.block.gin_messages:
+      simple_config_update:
+        region: highlighted
+        weight: 0
+    block.block.gin_page_title:
+      simple_config_update:
+        region: header
+        weight: -30
+    block.block.gin_primary_local_tasks:
+      simple_config_update:
+        region: header
+        weight: 0
+    block.block.gin_secondary_local_tasks:
+      simple_config_update:
+        region: pre_content
+        weight: 0
     # Updates batch size from 50 to 100.
     field.settings:
       simple_config_update:
