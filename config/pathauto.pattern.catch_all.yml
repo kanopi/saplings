@@ -1,0 +1,14 @@
+uuid: ab460acb-04e4-4862-ada4-bb397ffab7c7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: catch_all
+label: 'Catch all'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria: {  }
+selection_logic: and
+weight: -9
+relationships: {  }
