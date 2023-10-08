@@ -41,6 +41,9 @@
         "drupal/fancy_file_delete": "*",
         "drupal/field_group": "*",
         "drupal/focal_point": "*",
+        "drupal/gin": "*",
+        "drupal/gin_login": "*",
+        "drupal/gin_toolbar": "*",
         "drupal/google_tag": "*",
         "drupal/key": "*",
         "drupal/launch_checklist": "*",
@@ -82,6 +85,7 @@
         "drupal/smart_trim": "*",
         "drupal/token": "*",
         "drupal/token_or": "*",
+        "drupal/ultimate_cron": "*",
         "drupal/twig_tweak": "*",
         "drupal/view_unpublished": "*",
         "drupal/views_bulk_edit": "*",
@@ -90,6 +94,5 @@
         "drupal/views_infinite_scroll": "*",
         "drupal/viewsreference": "*",
         "drupal/webform": "*",
-        "kanopi/gin-admin-experience": "*"
     }
 }
