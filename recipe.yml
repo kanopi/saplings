@@ -85,6 +85,9 @@ install:
   - fancy_file_delete
   - field_group
   - focal_point
+  - gin
+  - gin_login
+  - gin_toolbar
   - google_tag
   - key
   - launch_checklist
@@ -193,6 +196,8 @@ config:
     environment_indicator: '*'
     fancy_file_delete: '*'
     focal_point: '*'
+    gin: '*'
+    gin_login: '*'
     google_tag: '*'
     launch_checklist: '*'
     linkit: '*'
@@ -224,6 +229,7 @@ config:
     smart_date:
       # We usually only need one date format.
       - smart_date.smartdate_format.default
+    ultimate_cron: '*'
     view_unpublished: '*'
     views_bulk_edit: '*'
     # It would be good to cull the Webform configs, but not at this time.
@@ -244,14 +250,12 @@ config:
     node.settings:
       simple_config_update:
         use_admin_theme: true
+    # Sets themes.
+    system.theme:
+      simple_config_update:
+        admin: 'gin'
+        default: 'stark'
     # Only Admins can register accounts.
     user.settings:
       simple_config_update:
         register: admin_only
-# ##############################################################################
-# Can we install additional recipes here?  Or only before install section?
-# ##############################################################################
-# recipes:
-#   - gin-admin-experience
-  # Does not exist yet.
-  # - seo_starter_recipe
