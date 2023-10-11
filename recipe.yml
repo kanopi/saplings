@@ -52,12 +52,13 @@ install:
   - views
   - views_ui
   - workflows
-  # Core themes
-  - claro
   # Contrib modules
   - access_unpublished
   - actions_permissions
   - address
+  - admin_toolbar
+  - admin_toolbar_search
+  - admin_toolbar_tools
   - allowed_formats
   - better_exposed_filters
   - block_class
@@ -85,9 +86,6 @@ install:
   - fancy_file_delete
   - field_group
   - focal_point
-  - gin
-  - gin_login
-  - gin_toolbar
   - google_tag
   - key
   - launch_checklist
@@ -188,6 +186,9 @@ config:
     views_ui: '*'
     # Contrib.
     access_unpublished: '*'
+    admin_toolbar: '*'
+    admin_toolbar_search: '*'
+    admin_toolbar_tools: '*'
     block_class: '*'
     config_ignore: '*'
     crop: '*'
@@ -197,16 +198,6 @@ config:
     environment_indicator: '*'
     fancy_file_delete: '*'
     focal_point: '*'
-    gin:
-      - gin.settings
-      - block.block.gin_breadcrumbs
-      - block.block.gin_content
-      - block.block.gin_help
-      - block.block.gin_local_actions
-      - block.block.gin_messages
-      - block.block.gin_page_title
-      - block.block.gin_primary_local_tasks
-    gin_login: '*'
     google_tag: '*'
     launch_checklist: '*'
     linkit: '*'
@@ -259,11 +250,6 @@ config:
     node.settings:
       simple_config_update:
         use_admin_theme: true
-    # Sets themes.
-    system.theme:
-      simple_config_update:
-        admin: 'gin'
-        default: 'stark'
     # Only Admins can register accounts.
     user.settings:
       simple_config_update:

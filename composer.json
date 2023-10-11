@@ -13,6 +13,7 @@
     "require": {
         "drupal/access_unpublished": "*",
         "drupal/address": "*",
+        "drupal/admin_toolbar": "*",
         "drupal/allowed_formats": "*",
         "drupal/better_exposed_filters": "*",
         "drupal/block_class": "*",
@@ -41,9 +42,6 @@
         "drupal/fancy_file_delete": "*",
         "drupal/field_group": "*",
         "drupal/focal_point": "*",
-        "drupal/gin": "*",
-        "drupal/gin_login": "*",
-        "drupal/gin_toolbar": "*",
         "drupal/google_tag": "*",
         "drupal/key": "*",
         "drupal/launch_checklist": "*",
