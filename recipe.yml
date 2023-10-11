@@ -7,21 +7,16 @@ type: 'Site'
 install:
   # Core modules
   - automated_cron
-  - block
   - block_content
-  - breakpoint
   - ckeditor5
   - config
   - content_moderation
   - contextual
   - datetime
-  - dblog
   - dynamic_page_cache
   - editor
-  - field
   - field_ui
   - file
-  - filter
   - help
   - help_topics
   - image
@@ -31,7 +26,6 @@ install:
   - menu_link_content
   - menu_ui
   - migrate
-  - node
   - options
   - page_cache
   - path
@@ -44,11 +38,7 @@ install:
   - shortcut
   - taxonomy
   - telephone
-  - text
-  - toolbar
   - tour
-  - update
-  - user
   - views
   - views_ui
   - workflows
@@ -56,9 +46,6 @@ install:
   - access_unpublished
   - actions_permissions
   - address
-  - admin_toolbar
-  - admin_toolbar_search
-  - admin_toolbar_tools
   - allowed_formats
   - better_exposed_filters
   - block_class
@@ -112,7 +99,6 @@ install:
   - rh_node
   - redirect
   - redirect_404
-  - redis
   - resource_hints
   - responsive_tables_filter
   - revision_log_default
@@ -144,13 +130,11 @@ config:
   import:
     # Core.
     automated_cron: '*'
-    block: '*'
     block_content:
       # Lets bring in the view to list cusotm blocks.
       # But not the default custom block itself.
       - views.view.block_content.yml
     content_moderation: '*'
-    dblog: '*'
     field_ui: '*'
     file:
       # Import file settings config, but not files view.
@@ -164,16 +148,6 @@ config:
     media: '*'
     media_library: '*'
     menu_ui: '*'
-    node:
-      # Do not import any Entity View Modes or Body field storage.
-      # Do not import Node Settings (use_admin_theme: false)
-      # Import actions we need, not Promote/Sticky.
-      - system.action.node_delete_action
-      - system.action.node_publish_action
-      - system.action.node_save_action
-      - system.action.node_unpublish_action
-      # Import only the admin content view.
-      - views.view.content
     shortcut: '*'
     # Same goes for node, block, dblog, page_cache, dynamic_page_cache, and stark.
     taxonomy:
@@ -181,14 +155,10 @@ config:
       - system.action.taxonomy_term_publish_action
       - system.action.taxonomy_term_unpublish_action
       - taxonomy.settings
-    text: '*'
     views: '*'
     views_ui: '*'
     # Contrib.
     access_unpublished: '*'
-    admin_toolbar: '*'
-    admin_toolbar_search: '*'
-    admin_toolbar_tools: '*'
     block_class: '*'
     config_ignore: '*'
     crop: '*'
