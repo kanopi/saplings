@@ -3,6 +3,6 @@ status: true
 dependencies: {  }
 id: content_editor
 label: 'Content Editor'
-weight: 3
+weight: 5
 is_admin: null
 permissions: {  }
