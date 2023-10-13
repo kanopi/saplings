@@ -31,7 +31,6 @@ install:
   - path
   - path_alias
   - responsive_image
-  - sdc
   - search
   - serialization
   - settings_tray
@@ -51,10 +50,6 @@ install:
   - block_class
   - block_field
   - checklistapi
-  - components
-  - config_filter
-  - config_ignore
-  - config_split
   - critical_css
   - crop
   - csp
@@ -69,7 +64,6 @@ install:
   - entityqueue
   - environment_indicator
   - environment_indicator_ribbon
-  - facets
   - fancy_file_delete
   - field_group
   - focal_point
@@ -95,16 +89,12 @@ install:
   - pathauto
   - permissions_filter
   - quick_node_clone
-  - rabbit_hole
-  - rh_node
   - redirect
   - redirect_404
   - resource_hints
   - responsive_tables_filter
   - revision_log_default
-  - rrssb
   - scheduler
-  - scheduler_content_moderation_integration
   - schema_metatag
   - seckit
   - seo_checklist
@@ -122,7 +112,6 @@ install:
   - views_data_export
   - views_infinite_scroll
   - viewsreference
-  - webform
 # ##############################################################################
 # Import only the configuration we want.
 # ##############################################################################
@@ -134,7 +123,6 @@ config:
       # Lets bring in the view to list cusotm blocks.
       # But not the default custom block itself.
       - views.view.block_content.yml
-    content_moderation: '*'
     field_ui: '*'
     file:
       # Import file settings config, but not files view.
@@ -160,7 +148,6 @@ config:
     # Contrib.
     access_unpublished: '*'
     block_class: '*'
-    config_ignore: '*'
     crop: '*'
     diff: '*'
     easy_breadcrumb: '*'
@@ -187,7 +174,6 @@ config:
     redirect_404: '*'
     resource_hints: '*'
     responsive_tables_filter: '*'
-    rrssb: '*'
     scheduler:
       - scheduler.settings
       - views.view.scheduler_scheduled_content
@@ -202,8 +188,6 @@ config:
     ultimate_cron: '*'
     view_unpublished: '*'
     views_bulk_edit: '*'
-    # It would be good to cull the Webform configs, but not at this time.
-    webform: '*'
   # ############################################################################
   # Here we can alter configuration that is in Drupal already.
   # ############################################################################
@@ -212,6 +196,10 @@ config:
     automated_cron.settings:
       simple_config_update:
         interval: 0
+    # Performance
+    system.performance:
+      simple_config_update:
+        cache.page.max_age: 300
     # Only Admins can register accounts.
     user.settings:
       simple_config_update:
