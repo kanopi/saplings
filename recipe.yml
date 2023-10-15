@@ -87,7 +87,6 @@ install:
   - paragraphs
   - paragraphs_edit
   - pathauto
-  - permissions_filter
   - quick_node_clone
   - redirect
   - redirect_404
