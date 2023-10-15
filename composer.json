@@ -59,7 +59,6 @@
         "drupal/paragraphs": "*",
         "drupal/paragraphs_edit": "*",
         "drupal/pathauto": "*",
-        "drupal/permissions_filter": "*",
         "drupal/quick_node_clone": "*",
         "drupal/rabbit_hole": "*",
         "drupal/redirect": "*",
