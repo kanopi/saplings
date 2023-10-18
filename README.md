@@ -11,6 +11,11 @@ This recipe is designed to help start a build project.
 - Run `fin recipe-unpack kanopi/drupal-build-starter` to unpack the dependencies
  from this recipe to the site project's composer.json file.
 
+**Note** 
+Redis will need to be setup through multiple steps and PRs. You must:
+1. Enable module and pantheon, leave redis config commented out, push to a PR, and merge
+2. Create a new branch/PR, uncomment redis config and push
+
 ## Contributing
 
 ### Adding a module
