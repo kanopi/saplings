@@ -50,6 +50,7 @@ install:
   - block_class
   - block_field
   - checklistapi
+  - clamav
   - critical_css
   - crop
   - csp
@@ -147,6 +148,7 @@ config:
     # Contrib.
     access_unpublished: '*'
     block_class: '*'
+    clamav: '*'
     crop: '*'
     diff: '*'
     easy_breadcrumb: '*'

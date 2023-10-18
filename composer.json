@@ -18,6 +18,7 @@
         "drupal/better_exposed_filters": "*",
         "drupal/block_class": "*",
         "drupal/block_field": "*",
+        "drupal/clamav": "*",
         "drupal/config_filter": "*",
         "drupal/config_ignore": "*",
         "drupal/config_split": "*",
