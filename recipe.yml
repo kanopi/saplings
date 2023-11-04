@@ -199,6 +199,8 @@ config:
     system.performance:
       simple_config_update:
         cache.page.max_age: 300
+        css.preprocess: true
+        js.preprocess: true
     # Only Admins can register accounts.
     user.settings:
       simple_config_update:
