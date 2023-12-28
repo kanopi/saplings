@@ -1,0 +1,23 @@
+{
+    "name": "kanopi/saplings",
+    "description": "Modern Drupal starter recipe.",
+    "type": "drupal-recipe",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Jim Birch",
+            "homepage": "https://kanopi.com",
+            "role": "Maintainer"
+        }
+    ],
+    "require": {
+        "kanopi/gin-admin-experience": "*",
+        "kanopi/saplings-base": "*",
+        "kanopi/saplings-media": "*",
+        "kanopi/saplings-editorial": "*",
+        "kanopi/saplings-launch": "*"
+    },
+    "suggest": {
+        "kanopi/password-policy-90-days": "Installs and configures Password Policy and sets 90 day expiration default."
+    }
+}

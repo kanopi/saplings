@@ -1,0 +1,9 @@
+name: 'Saplings'
+description: 'Modern Drupal starter recipe.'
+type: 'Site'
+recipes:
+  - gin-admin-experience
+  - saplings-base
+  - saplings-media
+  - saplings-editorial
+  - saplings-launch
