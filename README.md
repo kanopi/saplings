@@ -6,6 +6,7 @@ Rather than one large Recipe that tries to do everything, we've broken it up
 into multiple sub-recipes.  This recipe installs them all, but you can also
 install the sub-recipes on their own.
 
+* [gin-admin-experience](https://github.com/kanopi/gin-admin-experience)
 * [kanopi/saplings-base](https://github.com/kanopi/saplings-base)
 * [kanopi/saplings-media](https://github.com/kanopi/saplings-media)
 * [kanopi/saplings-editorial](https://github.com/kanopi/saplings-editorial)
