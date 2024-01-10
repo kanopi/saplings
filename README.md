@@ -30,22 +30,22 @@ Redis will need to be setup through multiple steps and PRs. You must:
 ### Roadmap
 
 #### Phase 1
-  * kanopi/saplings-content-post [WIP] - A post/article content type and dependencies
-    * kanopi/saplings-content-base [WIP] - Dependencies and field storage for content recipes.
-  * kanopi/saplings-theme - Recipe that configures https://www.drupal.org/project/ui_suite_bootstrap and dependencies.
+  * kanopi/saplings-content-post - A post/article content type and dependencies
+    * kanopi/saplings-content-base - Dependencies and field storage for content recipes.
+  * [kanopi/saplings-theme](https://github.com/kanopi/saplings-theme) - Recipe that configures https://www.drupal.org/project/ui_suite_bootstrap and dependencies.
   * kanopi/saplings-content-page - Pages
   * kanopi/saplings-components - Paragraphs
     * kanopi/saplings-components-{name} - Composable so you don't have to install all the paragraphs if you don't want to.
-* kanopi/solr-search-pantheon-recipe [WIP] - Recipe that installs essential modules for Pantheon SOLR search.
+* [kanopi/solr-search-pantheon-recipe](https://github.com/kanopi/solr-search-pantheon-recipe) - Recipe that installs essential modules for Pantheon SOLR search.
 
 #### Phase 2
 
 * Event/Calendar
 
-## Contributing
+## Contributing/Testing
 
-### Setting up a quick testing environment.
-Decide on a name for your testing environment.  In this example, I will use kanland.
+### Setting up a quick testing environment
+Decide on a name for your testing environment.  In this example, I will use `kanland`.
 
 * Checkout kanopi/drupal-starter into it's own repo.
 * `git clone git@github.com:kanopi/drupal-starter.git kanland && cd kanland`
@@ -62,24 +62,27 @@ To reset after you have done some testing:
 * The build will fail with the following message as we haven't installed Drupal yet. `Error: Class "Drupal\user\Entity\User" not found`
 * Run `fin drush si minimal -y && fin drush uli` to install Drupal and log in.
 
-### Requiring recipes.
+### Requiring recipes
 Use composer the require the recipes needed.  We currently host on our packagist.
 
-* kanopi/saplings - https://packagist.org/packages/kanopi/saplings
-  * kanopi/gin-admin-experience - Installs and configures the Gin admin theme and supporting base modules.
-  * kanopi/saplings-base - Simple base configuration for modern Drupal.
-  * kanopi/saplings-editorial - Configures a rich editing experience for modern Drupal.
-  * kanopi/saplings-launch - Configures best practices for launching modern Drupal.
-  * kanopi/saplings-media - Configures best practices for media.
-    * kanopi/imagemagick-configuration - Configures default Drupal image toolkit.
-* kanopi/password-policy-90-days - Installs and configures Password Policy and sets a 90 day expiration default.
+#### Saplings suite
+* [kanopi/saplings](https://packagist.org/packages/kanopi/saplings)
+  * [kanopi/gin-admin-experience](https://packagist.org/packages/kanopi/gin-admin-experience) - Installs and configures the Gin admin theme and supporting base modules.
+  * [kanopi/saplings-base](https://packagist.org/packages/kanopi/saplings-base) - Simple base configuration for modern Drupal.
+  * [kanopi/saplings-editorial](https://packagist.org/packages/kanopi/saplings-editorial) - Configures a rich editing experience for modern Drupal.
+  * [kanopi/saplings-launch](https://packagist.org/packages/kanopi/saplings-launch) - Configures best practices for launching modern Drupal.
+  * [kanopi/saplings-media](https://packagist.org/packages/kanopi/saplings-media) - Configures best practices for media.
+    * [kanopi/imagemagick-configuration](https://packagist.org/packages/kanopi/imagemagick-configuration) - Configures default Drupal image toolkit.
+   
+#### Other Recipes:
+* [kanopi/password-policy-90-days](https://packagist.org/packages/kanopi/password-policy-90-days) - Installs and configures Password Policy and sets a 90 day expiration default.
 
-### Applying recipes in Drupal.
+### Applying recipes in Drupal
 To apply contrib/composer installed recipes, run the following commands:
 
 `fin recipe-apply recipe-name`
 
-### Unpacking recipes in Composer.
+### Unpacking recipes in Composer
 Each recipe can have composer dependencies. "Unpacking" takes these dependencies from the recipe and applies them to the project's composer.json file.
 
 To unpack contrib/composer installed recipes, run the following commands:
@@ -100,7 +103,7 @@ To unpack contrib/composer installed recipes, run the following commands:
 3. General input and feedback welcome!
 4. What are your ideas for additional recipes?
 
-### Add Recipe functionality to your project.
+### Add Recipe functionality to your project
 If you like what you see here, you can add recipe support to your project today!
 
 * Copy `recipe-apply`, `recipe-configure`, and `recipe-unpack` from /.docksal/commands/ to your project.
