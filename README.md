@@ -27,9 +27,9 @@ Redis will need to be setup through multiple steps and PRs. You must:
 1. Enable module and pantheon, leave redis config commented out, push to a PR, and merge
 2. Create a new branch/PR, uncomment redis config and push
 
-### Roadmap
+## Roadmap
 
-#### Phase 1
+### Phase 1
   * kanopi/saplings-content-post - A post/article content type and dependencies
     * kanopi/saplings-content-base - Dependencies and field storage for content recipes.
   * [kanopi/saplings-theme](https://github.com/kanopi/saplings-theme) - Recipe that configures https://www.drupal.org/project/ui_suite_bootstrap and dependencies.
@@ -38,11 +38,12 @@ Redis will need to be setup through multiple steps and PRs. You must:
     * kanopi/saplings-components-{name} - Composable so you don't have to install all the paragraphs if you don't want to.
 * [kanopi/solr-search-pantheon-recipe](https://github.com/kanopi/solr-search-pantheon-recipe) - Recipe that installs essential modules for Pantheon SOLR search.
 
-#### Phase 2
+### Phase 2
 
 * Event/Calendar
 
 ## Contributing/Testing
+We'd love your help with testing, ideation, and development.
 
 ### Setting up a quick testing environment
 Decide on a name for your testing environment.  In this example, I will use `kanland`.
@@ -62,6 +63,8 @@ To reset after you have done some testing:
 * The build will fail with the following message as we haven't installed Drupal yet. `Error: Class "Drupal\user\Entity\User" not found`
 * Run `fin drush si minimal -y && fin drush uli` to install Drupal and log in.
 
+---
+
 ### Requiring recipes
 Use composer the require the recipes needed.  We currently host on our packagist.
 
@@ -77,17 +80,20 @@ Use composer the require the recipes needed.  We currently host on our packagist
 #### Other Recipes:
 * [kanopi/password-policy-90-days](https://packagist.org/packages/kanopi/password-policy-90-days) - Installs and configures Password Policy and sets a 90 day expiration default.
 
-### Applying recipes in Drupal
+---
+
+### Applying and Unpacking recipes in Drupal
 To apply contrib/composer installed recipes, run the following commands:
 
 `fin recipe-apply recipe-name`
 
-### Unpacking recipes in Composer
 Each recipe can have composer dependencies. "Unpacking" takes these dependencies from the recipe and applies them to the project's composer.json file.
 
 To unpack contrib/composer installed recipes, run the following commands:
 
 `fin recipe-unpack recipe-name`
+
+---
 
 ### Testing scenarios
 1. Apply kanopi/saplings
@@ -100,8 +106,11 @@ To unpack contrib/composer installed recipes, run the following commands:
   * In each, what Drupal configuration are missing? Things you need to click together to launch your site.
   * In each, what Drupal modules are missing?
   * In each, what do they have that you think should be removed?
+  * In each, do you see opportunity to subdivide even more by functionality to make these even more choose-your-own-adventure for developers?
 3. General input and feedback welcome!
 4. What are your ideas for additional recipes?
+
+---
 
 ### Add Recipe functionality to your project
 If you like what you see here, you can add recipe support to your project today!
