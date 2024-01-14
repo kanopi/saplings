@@ -13,7 +13,7 @@
     "require": {
         "kanopi/gin-admin-experience": "*",
         "kanopi/saplings-base": "*",
-        "kanopi/saplings-media": "^0.1.8",
+        "kanopi/saplings-media": "^0.1.9",
         "kanopi/saplings-editorial": "*",
         "kanopi/saplings-launch": "*"
     },
