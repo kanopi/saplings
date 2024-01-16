@@ -96,12 +96,28 @@ To unpack contrib/composer installed recipes, run the following commands:
 ---
 
 ### Testing scenarios
-1. Apply kanopi/saplings
+
+
+
+1. kanopi/saplings
+
+Follow the instructions above to get a local environment spun up.
+Then run the following commands to require and apply the recipe.
+`fin composer require kanopi/saplings`
+`fin recipe-apply saplings`
+
   * Does it function properly?
   * What Drupal configuration are missing? Things you need to click together to launch your site.
   * What Drupal modules are missing?
   * What does it have that you think should be removed?
 2. Apply each of the sub-saplings recipes by themselves and in different combinations.
+
+Follow the instructions above to get a local environment spun up.
+Then run the following commands to require and apply the recipe.
+`fin composer require kanopi/saplings-content-types` (for example)
+`fin recipe-apply saplings-content-types`
+
+
   * Do they function properly?
   * In each, what Drupal configuration are missing? Things you need to click together to launch your site.
   * In each, what Drupal modules are missing?
