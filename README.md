@@ -14,9 +14,12 @@ install the sub-recipes on their own.
 
 ## Installation
 
-- Follow the instructions in the
-[kanopi/drupal-starter](https://github.com/kanopi/drupal-starter) repository.
-- Install Drupal with the Minimal profile.
+- Clone the [kanopi/drupal-starter](https://github.com/kanopi/drupal-starter) repository and give the project folder a unique name to avoid collision with the base drupal-starter repository.
+- Edit the `docksal.env` and change the line `hostingsite="pantheon_project_machine_name"` to the name of your project folder.
+- Example: `hostingsite="sapling-test-project"`.
+- Initialize the site using `fin init`.
+- The project will fail at the `fin drush uli` step as there is no Drupal install yet.
+- After the `fin drush uli` failure, install Drupal with the Minimal profile using the `fin drush si minimal` command.
 - Run `fin composer require kanopi/saplings` to require this repository.
 - Run `fin recipe-apply saplings` to apply this recipe.
 - Run `fin recipe-unpack kanopi/saplings` to unpack the dependencies from this
