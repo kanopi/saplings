@@ -36,8 +36,8 @@ Redis will need to be setup through multiple steps and PRs. You must:
   * [kanopi/saplings-content-types](https://github.com/kanopi/saplings-content-types) - Currently a Post and Page content type and dependencies
     * [kanopi/saplings-content-base](https://github.com/kanopi/saplings-content-base) - Dependencies and field storage for content recipes.
   * [kanopi/saplings-theme](https://github.com/kanopi/saplings-theme) - Recipe that configures https://www.drupal.org/project/ui_suite_bootstrap and dependencies.
-  * [kanopi/saplings-components](https://github.com/kanopi/saplings-components) - Paragraphs
-    * [kanopi/saplings-components-base](https://github.com/kanopi/saplings-components-base) - based dependencies for Paragraphs
+  * [kanopi/saplings-component-types](https://github.com/kanopi/saplings-component-types) - Paragraphs
+    * [kanopi/saplings-component-base](https://github.com/kanopi/saplings-component-base) - based dependencies for Paragraphs
 * [kanopi/solr-search-pantheon-recipe](https://github.com/kanopi/solr-search-pantheon-recipe) - Recipe that installs essential modules for Pantheon SOLR search.
 
 ### Phase 2
