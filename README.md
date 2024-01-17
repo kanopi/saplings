@@ -21,6 +21,7 @@ install the sub-recipes on their own.
 - The project will fail at the `fin drush uli` step as there is no Drupal install yet.
 - After the `fin drush uli` failure, install Drupal with the Minimal profile using the `fin drush si minimal` command.
 - Run `fin composer require kanopi/saplings` to require this repository.
+- Note: If you run into an error about dropzone.js then use the following command instead `fin composer require kanopi/saplings:^0.1.29`.
 - Run `fin recipe-apply saplings` to apply this recipe.
 - Run `fin recipe-unpack kanopi/saplings` to unpack the dependencies from this
 recipe to the site project's composer.json file.
