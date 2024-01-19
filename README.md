@@ -8,11 +8,17 @@ install the sub-recipes on their own.
 
 * [kanopi/gin-admin-experience](https://github.com/kanopi/gin-admin-experience)
 * [kanopi/saplings-base](https://github.com/kanopi/saplings-base)
-* [kanopi/saplings-media](https://github.com/kanopi/saplings-media)
 * [kanopi/saplings-editorial](https://github.com/kanopi/saplings-editorial)
 * [kanopi/saplings-launch](https://github.com/kanopi/saplings-launch)
+* [kanopi/saplings-content-types](https://github.com/kanopi/saplings-content-types)
+  * [kanopi/saplings-media](https://github.com/kanopi/saplings-media)
+  * [kanopi/saplings-content-base](https://github.com/kanopi/saplings-content-base) - Dependencies and field storage for content recipes.
+  * [kanopi/saplings-component-types](https://github.com/kanopi/saplings-component-types) - Paragraphs
+    * [kanopi/saplings-component-base](https://github.com/kanopi/saplings-component-base) - Dependencies for Paragraphs
 
 ## Installation
+
+Apply a recipe to Drupal installed with a minimal profile.
 
 - Clone the [kanopi/drupal-starter](https://github.com/kanopi/drupal-starter) repository and give the project folder a unique name to avoid collision with the base drupal-starter repository.
 - Edit the `docksal.env` and change the line `hostingsite="pantheon_project_machine_name"` to the name of your project folder.
@@ -21,30 +27,25 @@ install the sub-recipes on their own.
 - The project will fail at the `fin drush uli` step as there is no Drupal install yet.
 - After the `fin drush uli` failure, install Drupal with the Minimal profile using the `fin drush si minimal` command.
 - Run `fin composer require kanopi/saplings` to require this repository.
-- Note: If you run into an error about dropzone.js then use the following command instead `fin composer require kanopi/saplings:^0.1.29`.
+- Note: If you run into an error about dropzone.js then use the following command instead `fin composer require kanopi/saplings:^0.1.31`.
 - Run `fin recipe-apply saplings` to apply this recipe.
-- Run `fin recipe-unpack kanopi/saplings` to unpack the dependencies from this
-recipe to the site project's composer.json file.
-
-**Note** 
-Redis will need to be setup through multiple steps and PRs. You must:
-1. Enable module and pantheon, leave redis config commented out, push to a PR, and merge
-2. Create a new branch/PR, uncomment redis config and push
+- If you are using this on a project, run `fin recipe-unpack kanopi/saplings` to unpack the dependencies from this
+recipe to the site project's composer.json file.  This is not required for testing.
 
 ## Roadmap
 
 ### Phase 1
-  * [kanopi/saplings-content-types](https://github.com/kanopi/saplings-content-types) - Currently a Post and Page content type and dependencies
-    * [kanopi/saplings-content-base](https://github.com/kanopi/saplings-content-base) - Dependencies and field storage for content recipes.
-  * [kanopi/saplings-theme](https://github.com/kanopi/saplings-theme) - Recipe that configures https://www.drupal.org/project/ui_suite_bootstrap and dependencies.
-  * [kanopi/saplings-component-types](https://github.com/kanopi/saplings-component-types) - Paragraphs
-    * [kanopi/saplings-component-base](https://github.com/kanopi/saplings-component-base) - based dependencies for Paragraphs
+* [kanopi/saplings-theme](https://github.com/kanopi/saplings-theme) - Recipe that configures https://www.drupal.org/project/ui_suite_bootstrap and dependencies.
 * [kanopi/solr-search-pantheon-recipe](https://github.com/kanopi/solr-search-pantheon-recipe) - Recipe that installs essential modules for Pantheon SOLR search.
+* Profile Content Type
 
 ### Phase 2
 
 * Break Content type and Component types into their own recipes. Once this [Drupal issue](https://www.drupal.org/project/distributions_recipes/issues/3390916) is resolved.
 * Event/Calendar
+
+### Other Recipes:
+* [kanopi/password-policy-90-days](https://packagist.org/packages/kanopi/password-policy-90-days) - Installs and configures Password Policy and sets a 90 day expiration default.
 
 ## Contributing/Testing
 We'd love your help with testing, ideation, and development.
@@ -72,20 +73,6 @@ To reset after you have done some testing:
 ### Requiring recipes
 Use composer the require the recipes needed.  We currently host on our packagist.
 
-#### Saplings suite
-* [kanopi/saplings](https://packagist.org/packages/kanopi/saplings)
-  * [kanopi/gin-admin-experience](https://packagist.org/packages/kanopi/gin-admin-experience) - Installs and configures the Gin admin theme and supporting base modules.
-  * [kanopi/saplings-base](https://packagist.org/packages/kanopi/saplings-base) - Simple base configuration for modern Drupal.
-  * [kanopi/saplings-editorial](https://packagist.org/packages/kanopi/saplings-editorial) - Configures a rich editing experience for modern Drupal.
-  * [kanopi/saplings-launch](https://packagist.org/packages/kanopi/saplings-launch) - Configures best practices for launching modern Drupal.
-  * [kanopi/saplings-media](https://packagist.org/packages/kanopi/saplings-media) - Configures best practices for media.
-    * [kanopi/imagemagick-configuration](https://packagist.org/packages/kanopi/imagemagick-configuration) - Configures default Drupal image toolkit.
-   
-#### Other Recipes:
-* [kanopi/password-policy-90-days](https://packagist.org/packages/kanopi/password-policy-90-days) - Installs and configures Password Policy and sets a 90 day expiration default.
-
----
-
 ### Applying and Unpacking recipes in Drupal
 To apply contrib/composer installed recipes, run the following commands:
 
@@ -101,8 +88,6 @@ To unpack contrib/composer installed recipes, run the following commands:
 
 ### Testing scenarios
 
-
-
 1. kanopi/saplings
 
 Follow the instructions above to get a local environment spun up.
@@ -114,21 +99,24 @@ Then run the following commands to require and apply the recipe.
   * What Drupal configuration are missing? Things you need to click together to launch your site.
   * What Drupal modules are missing?
   * What does it have that you think should be removed?
-2. Apply each of the sub-saplings recipes by themselves and in different combinations.
 
-Follow the instructions above to get a local environment spun up.
-Then run the following commands to require and apply the recipe.
-`fin composer require kanopi/saplings-content-types` (for example)
-`fin recipe-apply saplings-content-types`
+~~2. Apply each of the sub-saplings recipes by themselves and in different combinations.~~
+
+Once this [Drupal issue](https://www.drupal.org/project/distributions_recipes/issues/3390916) is resolved, we can do this.
+
+~~Follow the instructions above to get a local environment spun up.~~
+~~Then run the following commands to require and apply the recipe.~~
+~~`fin composer require kanopi/saplings-content-types` (for example)~~
+~~`fin recipe-apply saplings-content-types`~~
 
 
-  * Do they function properly?
-  * In each, what Drupal configuration are missing? Things you need to click together to launch your site.
-  * In each, what Drupal modules are missing?
-  * In each, what do they have that you think should be removed?
-  * In each, do you see opportunity to subdivide even more by functionality to make these even more choose-your-own-adventure for developers?
-3. General input and feedback welcome!
-4. What are your ideas for additional recipes?
+~~* Do they function properly?~~
+~~* In each, what Drupal configuration are missing? Things you need to click together to launch your site.~~
+~~* In each, what Drupal modules are missing?~~
+~~* In each, what do they have that you think should be removed?~~
+~~* In each, do you see opportunity to subdivide even more by functionality to make these even more choose-your-own-adventure for developers?~~
+~~3. General input and feedback welcome!~~
+~~4. What are your ideas for additional recipes?~~
 
 ---
 
