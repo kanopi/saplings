@@ -4,6 +4,6 @@ type: 'Site'
 recipes:
   - gin-admin-experience
   - saplings-base
-  - saplings-media
+  - saplings-content-types
   - saplings-editorial
   - saplings-launch
