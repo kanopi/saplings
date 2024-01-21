@@ -20,6 +20,7 @@
         "kanopi/saplings-tests": "*"
     },
     "suggest": {
+        "Patch Needed: drupal/ui_patterns_settings": "https://git.drupalcode.org/project/ui_patterns_settings/-/merge_requests/21.patch",
         "kanopi/password-policy-90-days": "Installs and configures Password Policy and sets 90 day expiration default."
     }
 }
