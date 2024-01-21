@@ -15,7 +15,9 @@
         "kanopi/saplings-base": "*",
         "kanopi/saplings-content-types": "*",
         "kanopi/saplings-editorial": "*",
-        "kanopi/saplings-launch": "*"
+        "kanopi/saplings-launch": "*",
+        "kanopi/saplings-theme": "*",
+        "kanopi/saplings-tests": "*"
     },
     "suggest": {
         "kanopi/password-policy-90-days": "Installs and configures Password Policy and sets 90 day expiration default."
