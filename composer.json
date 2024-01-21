@@ -16,7 +16,7 @@
         "kanopi/saplings-content-types": "*",
         "kanopi/saplings-editorial": "*",
         "kanopi/saplings-launch": "*",
-        "kanopi/saplings-theme": "*",
+        "kanopi/saplings-theme": "^0.0.8",
         "kanopi/saplings-tests": "*"
     },
     "suggest": {
