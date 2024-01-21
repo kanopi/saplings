@@ -1,10 +1,11 @@
 # Saplings - Drupal Build Starter Recipe
 
-This recipe is designed to help start a build project.
+This recipe is designed to help start a highly configured Drupal project.
 
 Rather than one large Recipe that tries to do everything, we've broken it up
 into multiple sub-recipes.  This recipe installs them all, but you can also
-install the sub-recipes on their own.
+install the sub-recipes on their own (Once this [Drupal issue](https://www.drupal.org/project/distributions_recipes/issues/3390916)
+ is resolved.).
 
 * [kanopi/gin-admin-experience](https://github.com/kanopi/gin-admin-experience)
 * [kanopi/saplings-base](https://github.com/kanopi/saplings-base)
@@ -12,37 +13,46 @@ install the sub-recipes on their own.
 * [kanopi/saplings-launch](https://github.com/kanopi/saplings-launch)
 * [kanopi/saplings-content-types](https://github.com/kanopi/saplings-content-types)
   * [kanopi/saplings-media](https://github.com/kanopi/saplings-media)
-  * [kanopi/saplings-content-base](https://github.com/kanopi/saplings-content-base) - Dependencies and field storage for content recipes.
-  * [kanopi/saplings-component-types](https://github.com/kanopi/saplings-component-types) - Paragraphs
-    * [kanopi/saplings-component-base](https://github.com/kanopi/saplings-component-base) - Dependencies for Paragraphs
+  * [kanopi/saplings-content-base](https://github.com/kanopi/saplings-content-base)
+  * [kanopi/saplings-component-types](https://github.com/kanopi/saplings-component-types)
+    * [kanopi/saplings-component-base](https://github.com/kanopi/saplings-component-base)
+* [kanopi/saplings-theme](https://github.com/kanopi/saplings-theme)
 
-## Installation
+## Requiring and Applying this recipe
 
-Apply a recipe to Drupal installed with a minimal profile.
+Apply a recipe to Drupal installed with a minimal profile.  See [below](#setting-up-a-quick-testing-environment)
+ is you want to set up a quick testing environment.
 
-- Clone the [kanopi/drupal-starter](https://github.com/kanopi/drupal-starter) repository and give the project folder a unique name to avoid collision with the base drupal-starter repository.
-- Edit the `docksal.env` and change the line `hostingsite="pantheon_project_machine_name"` to the name of your project folder.
-- Example: `hostingsite="sapling-test-project"`.
-- Initialize the site using `fin init`.
-- The project will fail at the `fin drush uli` step as there is no Drupal install yet.
-- After the `fin drush uli` failure, install Drupal with the Minimal profile using the `fin drush si minimal` command.
-- Run `fin composer require kanopi/saplings` to require this repository.
-- Note: If you run into an error about dropzone.js then use the following command instead `fin composer require kanopi/saplings:^0.1.31`.
+- Follow the instructions in [kanopi/drupal-starter](https://github.com/kanopi/drupal-starter)
+ to start a new project as it is configured for recipes and tooling needed.
+- Run `fin composer require kanopi/saplings:^0.1.32` to require this repository.
 - Run `fin recipe-apply saplings` to apply this recipe.
-- If you are using this on a project, run `fin recipe-unpack kanopi/saplings` to unpack the dependencies from this
-recipe to the site project's composer.json file.  This is not required for testing.
+- Run `fin recipe-unpack kanopi/saplings` to unpack the dependencies from this
+recipe to the site project's composer.json file.
+- Export configuration.
+
+You can then remove the recipe once it has been applied and unpacked as the
+configuration is now in your Drupal, and the dependencies are in your composer.
+
+- `fin composer remove kanopi/saplings`
+- Export configuration.
 
 ## Roadmap
 
 ### Phase 1
-* [kanopi/saplings-theme](https://github.com/kanopi/saplings-theme) - Recipe that configures https://www.drupal.org/project/ui_suite_bootstrap and dependencies.
-* [kanopi/solr-search-pantheon-recipe](https://github.com/kanopi/solr-search-pantheon-recipe) - Recipe that installs essential modules for Pantheon SOLR search.
-* Profile Content Type
+* [kanopi/solr-search-pantheon-recipe](https://github.com/kanopi/solr-search-pantheon-recipe)
+ - Recipe that installs essential modules for Pantheon SOLR search.
+
 
 ### Phase 2
 
+* Profile Content type
+* Event Content type/Supporting Views
+
+
+### Development notes:
 * Break Content type and Component types into their own recipes. Once this [Drupal issue](https://www.drupal.org/project/distributions_recipes/issues/3390916) is resolved.
-* Event/Calendar
+
 
 ### Other Recipes:
 * [kanopi/password-policy-90-days](https://packagist.org/packages/kanopi/password-policy-90-days) - Installs and configures Password Policy and sets a 90 day expiration default.
@@ -122,7 +132,7 @@ Once this [Drupal issue](https://www.drupal.org/project/distributions_recipes/is
 
 ---
 
-### Add Recipe functionality to your project
+### Add Recipe functionality to an existing project
 If you like what you see here, you can add recipe support to your project today!
 
 * Copy `recipe-apply`, `recipe-configure`, and `recipe-unpack` from /.docksal/commands/ to your project.
