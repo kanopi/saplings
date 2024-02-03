@@ -13,6 +13,8 @@ install the sub-recipes on their own (Once this [Drupal issue](https://www.drupa
 * [kanopi/saplings-launch](https://github.com/kanopi/saplings-launch)
 * [kanopi/saplings-content-types](https://github.com/kanopi/saplings-content-types)
   * [kanopi/saplings-media](https://github.com/kanopi/saplings-media)
+    * [kanopi/saplings-images](https://github.com/kanopi/saplings-images)
+    * [kanopi/imagemagick-configuration](https://github.com/kanopi/imagemagick-configuration)
   * [kanopi/saplings-content-base](https://github.com/kanopi/saplings-content-base)
   * [kanopi/saplings-component-types](https://github.com/kanopi/saplings-component-types)
     * [kanopi/saplings-component-base](https://github.com/kanopi/saplings-component-base)
@@ -25,7 +27,7 @@ Apply a recipe to Drupal installed with a minimal profile.  See [below](#setting
 
 - Follow the instructions in [kanopi/drupal-starter](https://github.com/kanopi/drupal-starter)
  to start a new project as it is configured for recipes and tooling needed.
-- Run `fin composer require kanopi/saplings:^0.1.37` to require this repository.
+- Run `fin composer require kanopi/saplings:^0.1.38` to require this repository.
 - Run `fin recipe-apply saplings` to apply this recipe.
 - Run `fin recipe-unpack kanopi/saplings` to unpack the dependencies from this
 recipe to the site project's composer.json file.
