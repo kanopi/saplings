@@ -20,6 +20,9 @@ install the sub-recipes on their own (Once this [Drupal issue](https://www.drupa
     * [kanopi/saplings-component-base](https://github.com/kanopi/saplings-component-base)
 * [kanopi/saplings-theme](https://github.com/kanopi/saplings-theme)
 
+![Saplings ERD](https://github.com/kanopi/saplings/assets/5177009/bce983a9-977b-4227-976f-764bea141073)
+<!-- Created in Lucid at https://lucid.app/lucidchart/6711555d-82fc-4ea0-8cd2-9f1c65ecb4b0/edit -->
+
 ## Requiring and Applying this recipe
 
 Apply a recipe to Drupal installed with a minimal profile.  See [below](#setting-up-a-quick-testing-environment)
