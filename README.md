@@ -13,17 +13,26 @@ install the sub-recipes on their own (Once this [Drupal issue](https://www.drupa
 * [kanopi/saplings-base](https://github.com/kanopi/saplings-base)
 * [kanopi/saplings-editorial](https://github.com/kanopi/saplings-editorial)
 * [kanopi/saplings-launch](https://github.com/kanopi/saplings-launch)
+* [kanopi/saplings-tests](https://github.com/kanopi/saplings-tests) [Cypress]
 * [kanopi/saplings-content-types](https://github.com/kanopi/saplings-content-types)
-  * [kanopi/saplings-media](https://github.com/kanopi/saplings-media)
-    * [kanopi/saplings-images](https://github.com/kanopi/saplings-images)
-    * [kanopi/imagemagick-configuration](https://github.com/kanopi/imagemagick-configuration)
   * [kanopi/saplings-content-base](https://github.com/kanopi/saplings-content-base)
   * [kanopi/saplings-component-types](https://github.com/kanopi/saplings-component-types)
     * [kanopi/saplings-component-base](https://github.com/kanopi/saplings-component-base)
-* [kanopi/saplings-theme](https://github.com/kanopi/saplings-theme)
+    * [kanopi/bootstrap_layout_classes](https://github.com/kanopi/bootstrap_layout_classes) [Module]
+  * [kanopi/saplings-media](https://github.com/kanopi/saplings-media)
+    * [kanopi/imagemagick-configuration](https://github.com/kanopi/imagemagick-configuration)
+  * [kanopi/saplings-theme](https://github.com/kanopi/saplings-theme)
+    * [kanopi/saplings_child](https://github.com/kanopi/saplings_child) [Theme]
+  * [kanopi/saplings_custom](https://github.com/kanopi/saplings_custom) [Module]
 
-![Saplings ERD](https://github.com/kanopi/saplings/assets/5177009/bce983a9-977b-4227-976f-764bea141073)
+
+---
+
+![saplings-erd](https://github.com/kanopi/saplings/assets/5177009/6053ad57-1c68-43f6-90cb-0829f2b1b98c)
 <!-- Created in Lucid at https://lucid.app/lucidchart/6711555d-82fc-4ea0-8cd2-9f1c65ecb4b0/edit -->
+
+
+---
 
 ## Requiring and Applying this recipe
 
@@ -32,7 +41,7 @@ Apply a recipe to Drupal installed with a minimal profile.  See [below](#setting
 
 - Follow the instructions in [kanopi/drupal-starter](https://github.com/kanopi/drupal-starter)
  to start a new project as it is configured for recipes and tooling needed.
-- Run `fin composer require kanopi/saplings:^0.1.38` to require this repository.
+- Run `fin composer require kanopi/saplings:^1` to require this repository.
 - Run `fin recipe-apply saplings` to apply this recipe.
 - Run `fin recipe-unpack kanopi/saplings` to unpack the dependencies from this
 recipe to the site project's composer.json file.
@@ -44,25 +53,27 @@ configuration is now in your Drupal, and the dependencies are in your composer.
 - `fin composer remove kanopi/saplings`
 - Export configuration.
 
+
+---
+
 ## Roadmap
 
 ### Phase 1
-* [kanopi/solr-search-pantheon-recipe](https://github.com/kanopi/solr-search-pantheon-recipe)
- - Recipe that installs essential modules for Pantheon SOLR search.
-
+* [kanopi/solr-search-pantheon-recipe](https://github.com/kanopi/solr-search-pantheon-recipe) - Recipe that installs essential modules for Pantheon SOLR search.
+* Post Content type views.
 
 ### Phase 2
 
-* Profile Content type
 * Event Content type/Supporting Views
 
-
 ### Development notes:
-* Break Content type and Component types into their own recipes. Once this [Drupal issue](https://www.drupal.org/project/distributions_recipes/issues/3390916) is resolved.
-
+* Break Content type and add-on Component types into their own recipes. Once this [Drupal issue](https://www.drupal.org/project/distributions_recipes/issues/3390916) is resolved.
 
 ### Other Recipes:
 * [kanopi/password-policy-90-days](https://packagist.org/packages/kanopi/password-policy-90-days) - Installs and configures Password Policy and sets a 90 day expiration default.
+
+
+---
 
 ## Contributing/Testing
 We'd love your help with testing, ideation, and development.
@@ -87,8 +98,6 @@ To reset after you have done some testing:
 * The build will fail with the following message as we haven't installed Drupal yet. `Error: Class "Drupal\user\Entity\User" not found`
 * Run `fin drush si minimal -y && fin drush uli` to install Drupal and log in.
 
----
-
 ### Requiring recipes
 Use composer the require the recipes needed.  We currently host on our packagist.
 
@@ -103,54 +112,7 @@ To unpack contrib/composer installed recipes, run the following commands:
 
 `fin recipe-unpack recipe-name`
 
----
-
-### Testing scenarios
-
-1. kanopi/saplings
-
-Follow the instructions above to get a local environment spun up.
-Then run the following commands to require and apply the recipe.
-`fin composer require kanopi/saplings`
-`fin recipe-apply saplings`
-
-  * Does it function properly?
-  * What Drupal configuration are missing? Things you need to click together to launch your site.
-  * What Drupal modules are missing?
-  * What does it have that you think should be removed?
-
-~~2. Apply each of the sub-saplings recipes by themselves and in different combinations.~~
-
-Once this [Drupal issue](https://www.drupal.org/project/distributions_recipes/issues/3390916) is resolved, we can do this.
-
-~~Follow the instructions above to get a local environment spun up.~~
-~~Then run the following commands to require and apply the recipe.~~
-~~`fin composer require kanopi/saplings-content-types` (for example)~~
-~~`fin recipe-apply saplings-content-types`~~
-
-
-~~* Do they function properly?~~
-~~* In each, what Drupal configuration are missing? Things you need to click together to launch your site.~~
-~~* In each, what Drupal modules are missing?~~
-~~* In each, what do they have that you think should be removed?~~
-~~* In each, do you see opportunity to subdivide even more by functionality to make these even more choose-your-own-adventure for developers?~~
-~~3. General input and feedback welcome!~~
-~~4. What are your ideas for additional recipes?~~
 
 ---
-
-### Add Recipe functionality to an existing project
-If you like what you see here, you can add recipe support to your project today!
-
-* Copy `recipe-apply`, `recipe-configure`, and `recipe-unpack` from /.docksal/commands/ to your project.
-* If you don't have any patches:
-  * Run `fin recipe-config` in the CLI of your project to configure composer and patch Drupal core.
-* If you do have patches:
-  * Comment out rows 30 and 31 of /.docksal/commands/recipe-config
-  * Save and run the command
-  * Apply the Drupal recipes patch manually.
-  * `fin composer update drupal/core-*`
-* Follow the suggestions at the end of the command.
-* You're ready to start applying recipes.
 
 Note: The Drupal core patch is experimental, but it is mainly additions.  If you don't want to have that on your production site, the good news is that you don't have to have patch after you've applied and unpacked your recipes.  You can simply remove the patch and update core as the recipes are now yours.
