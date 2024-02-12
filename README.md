@@ -78,7 +78,7 @@ Decide on a name for your testing environment.  In this example, I will use `kan
 * The build will fail with the following message as we haven't installed Drupal yet. `Error: Class "Drupal\user\Entity\User" not found`
 * Run `fin drush si minimal -y && fin drush uli` to install Drupal and log in.
 * Click on the one-time-login to verify the minimal install happened.
-* Require this repository: `fin composer require kanopi/saplings:^0.1.31`
+* Require this repository: `fin composer require kanopi/saplings:^1`
 * Apply the recipe: `fin recipe-apply saplings`
 
 To reset after you have done some testing:
