@@ -11,12 +11,12 @@
         }
     ],
     "require": {
-        "kanopi/gin-admin-experience": "*",
-        "kanopi/saplings-base": "*",
-        "kanopi/saplings-content-types": "*",
-        "kanopi/saplings-editorial": "*",
-        "kanopi/saplings-launch": "*",
-        "kanopi/saplings-tests": "*"
+        "kanopi/gin-admin-experience": "^1",
+        "kanopi/saplings-base": "^1",
+        "kanopi/saplings-content-types": "^1",
+        "kanopi/saplings-editorial": "^1",
+        "kanopi/saplings-launch": "^1",
+        "kanopi/saplings-tests": "^1"
     },
     "suggest": {
         "Patch Needed: drupal/ui_patterns_settings": "https://git.drupalcode.org/project/ui_patterns_settings/-/merge_requests/21.patch",
