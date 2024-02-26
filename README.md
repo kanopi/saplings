@@ -18,7 +18,6 @@ install the sub-recipes on their own (Once this [Drupal issue](https://www.drupa
   * [kanopi/saplings-content-base](https://github.com/kanopi/saplings-content-base)
   * [kanopi/saplings-component-types](https://github.com/kanopi/saplings-component-types)
     * [kanopi/saplings-component-base](https://github.com/kanopi/saplings-component-base)
-    * [kanopi/bootstrap_layout_classes](https://github.com/kanopi/bootstrap_layout_classes) [Module]
   * [kanopi/saplings-media](https://github.com/kanopi/saplings-media)
     * [kanopi/imagemagick-configuration](https://github.com/kanopi/imagemagick-configuration)
   * [kanopi/saplings-theme](https://github.com/kanopi/saplings-theme)
