@@ -42,8 +42,10 @@ Apply a recipe to Drupal installed with a minimal profile.  See [below](#setting
  to start a new project as it is configured for recipes and tooling needed.
 - Run `fin composer require kanopi/saplings:^1` to require this repository.
 - Run `fin recipe-apply saplings` to apply this recipe.
-- Run `fin recipe-unpack kanopi/saplings` to unpack the dependencies from this
-recipe to the site project's composer.json file.
+- Run the following command to unpack the dependencies from all kanopi/saplings recipes to the site project's composer.json file.
+```
+fin recipe-unpack kanopi/saplings && fin recipe-unpack kanopi/gin-admin-experience && fin recipe-unpack kanopi/saplings-base && fin recipe-unpack kanopi/saplings-editorial && fin recipe-unpack kanopi/saplings-launch && fin recipe-unpack kanopi/saplings-content-types && fin recipe-unpack kanopi/saplings-component-types && fin recipe-unpack kanopi/saplings-component-base && fin recipe-unpack kanopi/saplings-content-base && fin recipe-unpack kanopi/saplings-media && fin recipe-unpack kanopi/imagemagick-configuration && fin recipe-unpack kanopi/saplings-theme && fin recipe-unpack kanopi/saplings-editorial
+```
 - Export configuration.
 
 You can then remove the recipe once it has been applied and unpacked as the
