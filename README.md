@@ -27,8 +27,9 @@ install the sub-recipes on their own (Once this [Drupal issue](https://www.drupa
 
 ---
 
-![saplings-erd](https://github.com/kanopi/saplings/assets/5177009/6053ad57-1c68-43f6-90cb-0829f2b1b98c)
 <!-- Created in Lucid at https://lucid.app/lucidchart/6711555d-82fc-4ea0-8cd2-9f1c65ecb4b0/edit -->
+![Saplings ERD](https://github.com/kanopi/saplings/assets/5177009/3b348086-bfcd-427e-adf5-c6bcd1fc2cc7)
+
 
 
 ---
@@ -60,18 +61,21 @@ configuration is now in your Drupal, and the dependencies are in your composer.
 ## Roadmap
 
 ### Phase 1
-* [kanopi/solr-search-pantheon-recipe](https://github.com/kanopi/solr-search-pantheon-recipe) - Recipe that installs essential modules for Pantheon SOLR search.
-* Post Content type views.
+Feature complete.
 
 ### Phase 2
 
+* [kanopi/solr-search-pantheon-recipe](https://github.com/kanopi/solr-search-pantheon-recipe) - Recipe that installs essential modules for Pantheon SOLR search.
 * Event Content type/Supporting Views
+* Domain Access Recipe
+* Additional components
 
 ### Development notes:
 * Break Content type and add-on Component types into their own recipes. Once this [Drupal issue](https://www.drupal.org/project/distributions_recipes/issues/3390916) is resolved.
 
 ### Other Recipes:
 * [kanopi/password-policy-90-days](https://packagist.org/packages/kanopi/password-policy-90-days) - Installs and configures Password Policy and sets a 90 day expiration default.
+* [kanopi/remote-video-youtube-lite](https://packagist.org/packages/kanopi/remote-video-youtube-lite) - Configures Remote Video Media entity to use Lite YouTube Embed.
 
 
 ---
