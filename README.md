@@ -121,3 +121,10 @@ To unpack contrib/composer installed recipes, run the following commands:
 ---
 
 Note: The Drupal core patch is experimental, but it is mainly additions.  If you don't want to have that on your production site, the good news is that you don't have to have patch after you've applied and unpacked your recipes.  You can simply remove the patch and update core as the recipes are now yours.
+
+
+## Dependency Graph
+
+<img width="1775" alt="saplings-graph" src="https://github.com/kanopi/saplings/assets/5177009/1f1c9c31-0a20-4e7f-8c76-aa0c108f6d59">
+
+Created using [JBZoo/Composer-Graph](https://github.com/JBZoo/Composer-Graph)
