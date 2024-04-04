@@ -1,5 +1,5 @@
-- [README](../README.md)
+- [README](README.md)
 
 ## Table of contents
 
-- [LICENSE](../LICENSE.md)
+- [LICENSE](LICENSE.md)
