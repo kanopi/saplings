@@ -1,5 +1,6 @@
-root: ./
+root: ./docs
 structure:
-  summary: ./docs/summary.md
-  assets: ./docs/assets
+  summary: summary.md
+  readme: README.md
+  assets: /assets
 publishSpace: true
