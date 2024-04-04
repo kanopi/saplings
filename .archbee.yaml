@@ -1,5 +1,5 @@
-root: /
+root: ./
 structure:
-  summary: /docs/summary.md
-  assets: /docs/assets
+  summary: ./docs/summary.md
+  assets: ./docs/assets
 publishSpace: true
