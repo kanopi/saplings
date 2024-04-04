@@ -2,5 +2,5 @@ root: docs
 structure:
   summary: summary.md
   readme: ../README.md
-  assets: /assets
+  assets: ./docs/assets
 publishSpace: true
