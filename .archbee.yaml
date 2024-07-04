@@ -1,5 +1,4 @@
-version: 1
-
 structure:
-  summary: ../README.md
-  readme: ../README.md
+  summary: Summary.md
+  readme: 1-example.md
+publishSpace: true
