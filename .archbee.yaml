@@ -1,3 +1,5 @@
+version: 1
+
 structure:
   summary: ../README.md
   readme: ../README.md
