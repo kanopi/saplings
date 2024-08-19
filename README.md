@@ -18,6 +18,7 @@ install the sub-recipes on their own (Once this [Drupal issue](https://www.drupa
   * [kanopi/saplings-content-base](https://github.com/kanopi/saplings-content-base)
   * [kanopi/saplings-component-types](https://github.com/kanopi/saplings-component-types)
     * [kanopi/saplings-component-base](https://github.com/kanopi/saplings-component-base)
+      * [kanopi/saplings_paragraphs](https://github.com/kanopi/saplings_paragraphs) [Module]
   * [kanopi/saplings-media](https://github.com/kanopi/saplings-media)
     * [kanopi/imagemagick-configuration](https://github.com/kanopi/imagemagick-configuration)
   * [kanopi/saplings-theme](https://github.com/kanopi/saplings-theme)
@@ -64,19 +65,26 @@ configuration is now in your Drupal, and the dependencies are in your composer.
 Feature complete.
 
 ### Phase 2
+* Break Page and Post Content types into their own recipes.
+* Additional components as needed.
+* [kanopi/saplings-ai](https://github.com/kanopi/saplings-ai) - [WIP] Helpful AI functionality for content creators.
+* [kanopi/saplings-person](https://github.com/kanopi/saplings-person) - [WIP] Creates a Person content type and related configuration.
+* [kanopi/saplings-events](https://github.com/kanopi/saplings-events) -  [WIP] Configuration for Saplings Events 
+* [kanopi/saplings-demo-events](https://github.com/kanopi/saplings-demo-events) - [WIP] Demo content for Saplings Events
+* [kanopi/solr-search-pantheon-recipe](https://github.com/kanopi/solr-search-pantheon-recipe) - The goal is to configure Solr for Pantheon on a site that isn't going to use saplings.
 
-* [kanopi/solr-search-pantheon-recipe](https://github.com/kanopi/solr-search-pantheon-recipe) - Recipe that installs essential modules for Pantheon SOLR search.
-* Event Content type/Supporting Views
-* Domain Access Recipe
-* Additional components
+### Phase 3
+Investigate extending Drupal CMS' recipes.
 
-### Development notes:
-* Break Content type and add-on Component types into their own recipes. Once this [Drupal issue](https://www.drupal.org/project/distributions_recipes/issues/3390916) is resolved.
-
-### Other Recipes:
+### Other Kanopi Recipes:
+* [kanopi/saplings-domain](https://github.com/kanopi/saplings-domain) -  Installs and configures Domain modules.
+* [kanopi/saplings-demo-content](https://github.com/kanopi/saplings-demo-content) - Demo content for Saplings.
+* [kanopi/saplings-solr](https://github.com/kanopi/saplings-solr) - Configures a back-end and front-end Solr search customized for Saplings on Pantheon.
 * [kanopi/password-policy-90-days](https://packagist.org/packages/kanopi/password-policy-90-days) - Installs and configures Password Policy and sets a 90 day expiration default.
 * [kanopi/remote-video-youtube-lite](https://packagist.org/packages/kanopi/remote-video-youtube-lite) - Configures Remote Video Media entity to use Lite YouTube Embed.
 
+### Other Saplings related modules
+* [kanopi/saplings_navbar](https://github.com/kanopi/saplings_navbar) - Creates a navbar pattern for Saplings that allows the parent to be a link and then have a dropdown indicator to access child menu items.
 
 ---
 
