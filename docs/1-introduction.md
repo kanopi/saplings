@@ -1,8 +1,11 @@
-- [README](../README.md)
+![saplings](https://github.com/kanopi/saplings/assets/5177009/a6377e32-deb2-49d8-873a-f3dd5a36fa7c)
+
+# Saplings Introduction
+
+Saplings is a highly configured open source content management system built on the modern Drupal framework.
 
 ## Table of contents
 
-- [1. Introduction](1-introduction.md)
 - [2. Content types](2-content-types.md)
 - [3. Components](3-components.md)
 - [4. Menus](4-menus.md)
