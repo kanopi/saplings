@@ -5,89 +5,62 @@
 
 ## Component Styles Overview
 
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to assets/images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/images/image8.png "image_tooltip")
 
 
 Each paragraph comes with a set of styles that can be updated for the display of that section. The styles are nested in a dropdown section below each of the paragraph edit forms. Included styles are listed below.
 
-**Margin**
+- **Margin**
 
-Options:
+  Options:
+    * Top and Bottom Small
+    * Top and Bottom Medium
+    * Top and Bottom Large
+    * Top Small
+    * Top Medium
+    * Top Large
+    * Bottom Small
+    * Bottom Medium
+    * Bottom Large
+- **Padding**
 
+  Options:
+    * Top and Bottom Small
+    * Top and Bottom Medium
+    * Top and Bottom Large
+    * Top Small
+    * Top Medium
+    * Top Large
+    * Bottom Small
+    * Bottom Medium
+    * Bottom Large
+- **Container**
 
+  Options:
+    * Standard (this is the standard container width)
+    * Container Fluid (this will cause the container to be full width
+- **Width**
 
-* Top and Bottom Small
-* Top and Bottom Medium
-* Top and Bottom Large
-* Top Small
-* Top Medium
-* Top Large
-* Bottom Small
-* Bottom Medium
-* Bottom Large
-
-**Padding**
-
-Options:
-
-
-
-* Top and Bottom Small
-* Top and Bottom Medium
-* Top and Bottom Large
-* Top Small
-* Top Medium
-* Top Large
-* Bottom Small
-* Bottom Medium
-* Bottom Large
-
-**Container**
-
-Options:
-
-
-
-* Standard (this is the standard container width)
-* Container Fluid (this will cause the container to be full width
-
-**Width**
-
-Options:
-
-
-
-* 75%
-* 50%
-* 33%
-* 25%
-
+  Options:
+    * 75%
+    * 50%
+    * 33%
+    * 25%
 **Background**
 
-Options:
-
-
-
-* Primary
-* Secondary
-* Dark
-* Light
+  Options:
+    * Primary
+    * Secondary
+    * Dark
+    * Light
 
 The default options can be altered after installation. Currently the only options that have default settings are:
-
-
-
 * Padding: Top and Bottom Medium
 * Container: Standard
 
+## Accordion/Accordion Item
 
-##  \
-Accordion (and Accordion Item)
-
-
+![alt_text](assets/images/image9.png "image_tooltip")
 
 1. To add an accordion paragraph type, create a new Page content.
 2. From the Components dropdown, choose an accordion
@@ -96,17 +69,9 @@ Accordion (and Accordion Item)
 5. Styles that are set on the Accordion will affect the entire accordion section
 
 
-
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to assets/images/image9.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](assets/images/image9.png "image_tooltip")
-
-
-
 ## Block
 
-
+![alt_text](assets/images/image10.png "image_tooltip")
 
 1. To add a Block paragraph type, create a new Page content.
 2. From the Components dropdown, choose a Block
@@ -115,17 +80,11 @@ Accordion (and Accordion Item)
 5. Styles that are set on the Block will affect the entire Block section
 
 Fields:
-
-
-
 * Title
 * Description
 * Block
 
 Styles:
-
-
-
 * Background
 * Width
 * Margin
@@ -134,63 +93,32 @@ Styles:
 
 
 
-<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to assets/images/image10.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](assets/images/image10.png "image_tooltip")
-
-
-
 ## Card
 
-
+![alt_text](assets/images/image11.png "image_tooltip")
 
 1. To add a Card paragraph type, when editing Page content, from the Components dropdown, choose a Card.
 2. Add a Header for the Card Title and a description for the card body
 3. Add media for the card image
 4. Add a link to display a link in the card footer.
 
-
-
-<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to assets/images/image11.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](assets/images/image11.png "image_tooltip")
-
-
-
 ### For Developers:
 
 To alter the display of your card to Horizontal, go to the Manage Display Tab, Click on Pattern Settings, and for the Variant dropdown, choose Horizontal.
-
-<p id="gdcalert12" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to assets/images/image12.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert13">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![alt_text](assets/images/image12.png "image_tooltip")
 
 
 To alter the display of the link for your card, in the Manage display tab, Edit the pattern variant for the link. The Variant determines which bootstrap button style variable will be printed.
 
-
-
-<p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to assets/images/image13.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/images/image13.png "image_tooltip")
 
-
- \
 In addition, there is a setting that allows you to link the entire card, or to turn that off.
-
-<p id="gdcalert14" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to assets/images/image14.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert15">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![alt_text](assets/images/image14.png "image_tooltip")
 
 
 Slots:
-
-
 
 * Image
 * Header
