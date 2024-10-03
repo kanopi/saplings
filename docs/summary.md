@@ -3,7 +3,8 @@
 ## Table of contents
 
 - [1. Introduction](1-introduction.md)
-- [2. Content types](1-content-types.md)
+- [2. Content types](2-content-types.md)
+- [4. Menus](4-menus.md)
 
 ## Add Ons
 
