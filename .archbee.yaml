@@ -1,4 +1,4 @@
 structure:
-  summary: Summary.md
-  readme: 1-example.md
+  summary: summary.md
+  readme: 1-developer-documentation.md
 publishSpace: true
