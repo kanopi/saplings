@@ -1,3 +1,5 @@
+![saplings](https://github.com/kanopi/saplings/assets/5177009/a6377e32-deb2-49d8-873a-f3dd5a36fa7c)
+
 # Menus
 
 [<img src="assets/images/menus.gif">](https://www.loom.com/share/d0ccb3745b284b6285af1f1817813ab3)

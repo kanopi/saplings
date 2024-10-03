@@ -1,3 +1,5 @@
+![saplings](https://github.com/kanopi/saplings/assets/5177009/a6377e32-deb2-49d8-873a-f3dd5a36fa7c)
+
 # Media
 
 [<img src="assets/images/media.gif">](https://www.loom.com/share/999be51038f94b57a2e4da27e2a15c17)
