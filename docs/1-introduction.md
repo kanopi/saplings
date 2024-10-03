@@ -12,7 +12,7 @@ Saplings is a highly configured open source content management system built on t
 - [5. Media](5-media.md)
 - [6. Taxonomies](6-taxonomies.md)
 - [7. Developer Documentation](7-developer-documentation.md)
-- [8. Designer Documentation](7-designer-documentation.md)
+- [8. Designer Documentation](8-designer-documentation.md)
 
 ## Add Ons
 
