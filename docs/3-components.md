@@ -2,11 +2,9 @@
 
 # Components
 
-
 ## Component Style Options Overview
 
 ![alt_text](assets/images/components-style-options.png "Style options")
-
 
 Each paragraph comes with a set of styles that can be updated for the display of that section. The styles are nested in a dropdown section below each of the paragraph edit forms. Included styles are listed below.
 
@@ -58,6 +56,7 @@ The default options can be altered after installation. Currently the only option
 - Padding: Top and Bottom Medium
 - Container: Standard
 
+
 ## Accordion/Accordion Item
 
 ![alt_text](assets/images/component-accordion.png "Accordion")
@@ -99,58 +98,20 @@ Use the card component to create flexible and extensible content containers that
 
 To alter the display of your card to Horizontal, go to the Manage Display Tab, Click on Pattern Settings, and for the Variant dropdown, choose Horizontal.
 
-![alt_text](assets/images/image12.png "image_tooltip")
+![alt_text](assets/images/component-card-horizontal-variant.png "Card Horizontal Variant")
 
 To alter the display of the link for your card, in the Manage display tab, Edit the pattern variant for the link. The Variant determines which bootstrap button style variable will be printed.
 
-![alt_text](assets/images/image13.png "image_tooltip")
+![alt_text](assets/images/component-card-link-variant.png "Card Link Variant")
 
 In addition, there is a setting that allows you to link the entire card, or to turn that off.
 
-![alt_text](assets/images/image14.png "image_tooltip")
-
-## Filtered List
-
-A filtered list component allows you to display predefined Drupal views.
+![alt_text](assets/images/component-card-link-card.png "Card Link Entire Card")
 
 
-## Text
+## Carousel/Carousel Item
 
-A text component allows for text to be added to a page with a wysiwyg editor.
-
-
-![alt_text](assets/images/image15.png "image_tooltip")
-
-
-
-## Columns
-
-A columns component allows for a text, card, block, media, carousel and block component to be added as columns..
-
-![alt_text](assets/images/image16.png "image_tooltip")
-
-
-
-## Media
-
-A media component allows for either an image or video media entity to be added.
-
-
-### Remote Video Example
-
-![alt_text](assets/images/image17.png "image_tooltip")
-
-
-
-## Tabs
-
-A tabs component allows for multiple tabs to be added to display content in a tabbed display that will show and hide tabbed content on click.
-
-![alt_text](assets/images/image18.png "image_tooltip")
-
-
-
-## Carousel
+![alt_text](assets/images/component-carousel.png "Carousel Component")
 
 A Carousel component allows for multiple media items to be displayed in a carousel
 
@@ -165,8 +126,7 @@ Available options are:
 * Token for Interval
 * ID
 
-![alt_text](assets/images/image19.png "image_tooltip")
-
+![alt_text](assets/images/component-carousel-settings.png "Carousel Settings")
 
 The referenced Carousel Item Paragraph type is using the pattern of Carousel Item which has the following slots:
 
@@ -177,21 +137,50 @@ To manage the display, visit this URL `admin/structure/paragraphs_type/sa_carous
 
 On the display page you can also alter the image style that is loaded.
 
-![alt_text](assets/images/image20.png "image_tooltip")
+![alt_text](assets/images/component-carousel-image-style.png "Carousel Component Image Size")
 
 
-![alt_text](assets/images/image21.png "image_tooltip")
+## Columns
+
+![alt_text](assets/images/component-columns.png "Columns COmponent")
+
+A columns component allows for a text, card, block, media, carousel and block component to be added as columns..
 
 
+## Filtered List
 
-## Side By Side
+A filtered list component allows you to display preselected Drupal views.
 
-The side by side component offers a header, text field and a media field for displaying the content. The default display of content is the Media on the left and the Header and Description on the right. The columns will display as equal columns. If the Boolean for Reverse Order is turned on, The Media will display on the right side instead.
-
-![alt_text](assets/images/image22.png "image_tooltip")
 
 ## Hero
 
 The hero components allows for either a background video or image and a text overlay.
 
-![alt_text](assets/images/image23.png "image_tooltip")
+
+## Media
+
+![alt_text](assets/images/component-columns.png "Media Component")
+
+A media component allows for either an image or video media entity to be added.
+
+
+## Tabs
+
+![alt_text](assets/images/component-tabs.png "Tabs Component")
+
+A tabs component allows for multiple tabs to be added to display content in a tabbed display that will show and hide tabbed content on click.
+
+
+## Text
+
+![alt_text](assets/images/component-text.png "Text Component")
+
+A text component allows for text to be added to a page with a wysiwyg editor.
+
+
+## Side By Side
+
+![alt_text](assets/images/component-side-by-side.png "Side by Side Component")
+
+The side by side component offers a header, text field and a media field for displaying the content. The default display of content is the Media on the left and the Header and Description on the right. The columns will display as equal columns. If the Boolean for Reverse Order is turned on, The Media will display on the right side instead.
+
