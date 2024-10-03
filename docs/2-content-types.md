@@ -5,6 +5,7 @@
 ## Page
 
 [<img src="assets/images/create-page.gif">](https://www.loom.com/share/4c4c15d3730f43f3b5409cbc707298f9)
+
 [Adding Content and Styling to a Page - Watch Video](https://www.loom.com/share/4c4c15d3730f43f3b5409cbc707298f9)
 
 The page content types comes with the following fields:
@@ -13,6 +14,7 @@ The page content types comes with the following fields:
 - **Description:** Used on the teaser display as well as the SEO meta description
 - **Featured Image:** Used at the top of the page as a header as well as the card image on the teaser display
 - **Overlay:** Changes the overlay over the image and the text color of the header and summary text
+
   Options:
   * Light - 90%
   * Light - 75%
@@ -23,6 +25,7 @@ The page content types comes with the following fields:
   * Dark - 50%
   * Dark - 25%
 - **Header Position:** Places the title and description in the header section
+
   Options:
   * Top
   * Middle
@@ -46,6 +49,7 @@ The post content types comes with the following fields:
 - **Description:** Used on the teaser display as well as the SEO meta description
 - **Featured Image:** Used at the top of the page as a header as well as the card image on the teaser display
 - **Overlay:** Changes the overlay over the image and the text color of the header and summary text
+
   Options:
     * Light - 90%
     * Light - 75%
@@ -56,6 +60,7 @@ The post content types comes with the following fields:
     * Dark - 50%
     * Dark - 25%
  - **Header Position:** Places the title and description in the header section
+
   Options:
     * Top
     * Middle
@@ -79,6 +84,7 @@ The event content types comes with the following fields:
 - **Description:** Used on the teaser display as well as the SEO meta description
 - **Featured Image:** Used at the top of the page as a header as well as the card image on the teaser display
 - **Overlay:** Changes the overlay over the image and the text color of the header and summary text
+
   Options:
     * Light - 90%
     * Light - 75%
@@ -89,6 +95,7 @@ The event content types comes with the following fields:
     * Dark - 50%
     * Dark - 25%
 - **Header Position:** Places the title and description in the header section
+
   Options:
     * Top
     * Middle
@@ -96,11 +103,13 @@ The event content types comes with the following fields:
 - **Hide Header Section:** Used to hide the page title and image and summary so that paragraphs can be used instead to place content
 - **Date**
 - **Attendance Mode**
+
   Options:
     * In Person
     * Online
     * Mixed
 - **Availability**
+
   Options:
     * In Stock
     * Sold Out
