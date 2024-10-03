@@ -144,12 +144,21 @@ On the display page you can also alter the image style that is loaded.
 
 ![alt_text](assets/images/component-columns.png "Columns COmponent")
 
-A columns component allows for a text, card, block, media, carousel and block component to be added as columns..
+A columns component allows for a text, card, block, media, carousel and block component to be added as columns.
+
+## Existing Content card
+
+Use this component to select existing site content and the result will be turned into a card.
 
 
 ## Filtered List
 
 A filtered list component allows you to display preselected Drupal views.
+
+
+## Frequently Asked Questions (FAQ)/FAQ Item
+
+Uses Google approved Schema.org markup to display FAQs on your page.
 
 
 ## Hero
@@ -163,6 +172,22 @@ The hero components allows for either a background video or image and a text ove
 
 A media component allows for either an image or video media entity to be added.
 
+
+## Media Collection
+
+Used to display groups of image and video media entities.
+
+
+## Side By Side
+
+![alt_text](assets/images/component-side-by-side.png "Side by Side Component")
+
+The side by side component offers a header, text field and a media field for displaying the content. The default display of content is the Media on the left and the Header and Description on the right. The columns will display as equal columns. If the Boolean for Reverse Order is turned on, The Media will display on the right side instead.
+
+
+## Statistic
+
+The Stat component can be used in columns to display important statistics about your site or organization.
 
 ## Tabs
 
@@ -178,9 +203,5 @@ A tabs component allows for multiple tabs to be added to display content in a ta
 A text component allows for text to be added to a page with a wysiwyg editor.
 
 
-## Side By Side
 
-![alt_text](assets/images/component-side-by-side.png "Side by Side Component")
-
-The side by side component offers a header, text field and a media field for displaying the content. The default display of content is the Media on the left and the Header and Description on the right. The columns will display as equal columns. If the Boolean for Reverse Order is turned on, The Media will display on the right side instead.
 
