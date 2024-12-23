@@ -16,7 +16,7 @@
         "kanopi/saplings-base": "^1",
         "kanopi/saplings-content-types": "^1",
         "kanopi/saplings-editorial": "^1.0.0-beta.9",
-        "kanopi/saplings-launch": "^1",
+        "kanopi/saplings-launch": "^1.0.0.beta.6",
         "kanopi/saplings-tests": "^1"
     },
     "suggest": {
