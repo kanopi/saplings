@@ -1,4 +1,4 @@
 structure:
   summary: summary.md
-  readme: 1-introduction.md
+  readme: index.md
 publishSpace: true
