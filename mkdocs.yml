@@ -1,0 +1,13 @@
+site_name: Saplings Documentation
+site_description: This recipe is designed to help start a highly configured Drupal project.
+site_url: https://kanopi.github.io/saplings
+repo_url: https://github.com/kanopi/saplings
+edit_uri: edit/main/docs/
+
+nav:
+  - Home: index.md
+  - About:
+    - Example: 1-example.md
+
+theme:
+  name: material
