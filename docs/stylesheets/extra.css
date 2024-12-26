@@ -1,0 +1,24 @@
+[data-md-color-scheme="saplings"] {
+  --md-primary-fg-color:        #153e35;
+  --md-primary-fg-color--light: #ff7d55;
+  --md-primary-fg-color--dark:  #90030C;
+
+  --md-typeset-a-color: #ff7d55;
+  --md-accent-fg-color: #ff7d55;
+}
+
+img[alt$=">"] {
+  float: right;
+}
+
+img[alt$="<"] {
+  float: left;
+}
+
+img[alt$="><"] {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  float: none!important;
+}
