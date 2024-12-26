@@ -2,4 +2,4 @@
 
 ## Table of contents
 
-- [1. Example](1-example.md)
+- [Home](index.md)
