@@ -28,3 +28,23 @@ nav:
 
 theme:
   name: material
+  logo: assets/images/logo.svg
+  favicon: assets/images/favicon.png
+  palette:
+    scheme: saplings
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/KanopiStudios
+    - icon: fontawesome/brands/x-twitter
+      link: https://twitter.com/kanopi_studios
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/kanopistudios
+    - icon: fontawesome/brands/github
+      link: https://github.com/kanopi
+  generator: false
+
+copyright: Copyright &copy; 2024 - 2025 Kanopi Studios
