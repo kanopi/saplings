@@ -2,7 +2,7 @@
 
 # Media
 
-[<img src="assets/images/media.gif">](https://www.loom.com/share/999be51038f94b57a2e4da27e2a15c17)
+[![Screenshot](assets/images/media.gif)](https://www.loom.com/share/999be51038f94b57a2e4da27e2a15c17)
 
 [Sapling Media Types and Responsive Image Styles - Watch Video](https://www.loom.com/share/999be51038f94b57a2e4da27e2a15c17)
 

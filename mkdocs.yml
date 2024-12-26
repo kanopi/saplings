@@ -6,8 +6,25 @@ edit_uri: edit/main/docs/
 
 nav:
   - Home: index.md
-  - About:
-    - Example: 1-example.md
+  - Site Architecture:
+    - Content types:
+      - Page: content-types-page.md
+      - Post: content-types-post.md
+      - Event: content-types-event.md
+    - Components: components.md
+    - Media: media.md
+    - Menus: menus.md
+    - Taxonomies: taxonomies.md
+    - Add ons:
+      - Language Switcher: add-on-language-switcher.md
+      - Mega Menu: add-on-mega-menu.md
+      - Search: add-on-search.md
+  - For Designers:
+    - Designer Documentation: designers.md
+  - For Developers:
+    - Developer Documentation: developers.md
+  - Recipe Architecture:
+    - Introduction: recipes-introduction.md
 
 theme:
   name: material

@@ -1,15 +1,20 @@
+<!--- This file is used for the Archbee table of contents. -->
 - [Project Readme](../README.md)
 
 ## Table of contents
 
 - [Introduction](index.md)
-- [Content types](2-content-types.md)
-- [Components](3-components.md)
-- [Menus](4-menus.md)
-- [Media](5-media.md)
-- [Taxonomies](6-taxonomies.md)
-- [Developer Documentation](7-developer-documentation.md)
-- [Designer Documentation](7-designer-documentation.md)
+- [Content types](content-types.md)
+  - [Page](content-types-page.md)
+  - [Post](content-types-post.md)
+  - [Event](content-types-event.md)
+- [Components](components.md)
+- [Media](media.md)
+- [Menus](menus.md)
+- [Taxonomies](taxonomies.md)
+- [Designer Documentation](designers.md)
+- [Developer Documentation](developers.md)
+- [Recipes Introduction](recipes-introduction.md)
 
 ## Add Ons
 

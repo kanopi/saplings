@@ -2,7 +2,7 @@
 
 # Menus
 
-[<img src="assets/images/menus.gif">](https://www.loom.com/share/d0ccb3745b284b6285af1f1817813ab3)
+[![Screenshot](assets/images/menus.gif)](https://www.loom.com/share/d0ccb3745b284b6285af1f1817813ab3)
 
 [Saplings Built-in Menus - Watch Video](https://www.loom.com/share/d0ccb3745b284b6285af1f1817813ab3)
 
