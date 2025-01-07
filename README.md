@@ -43,7 +43,7 @@ Apply a recipe to Drupal installed with a minimal profile.  See [below](#setting
 - Follow the instructions in [kanopi/drupal-starter](https://github.com/kanopi/drupal-starter)
  to start a new project as it is configured for recipes and tooling needed.
 - Run `fin composer require kanopi/saplings:^1` to require this repository.
-- Run `fin recipe-apply saplings` to apply this recipe.
+- Run `fin recipe-apply ../recipes/saplings` to apply this recipe.
 - Run the following command to unpack the dependencies from all kanopi/saplings recipes to the site project's composer.json file.
 ```
 fin recipe-unpack kanopi/saplings && fin recipe-unpack kanopi/gin-admin-experience && fin recipe-unpack kanopi/saplings-base && fin recipe-unpack kanopi/saplings-editorial && fin recipe-unpack kanopi/saplings-launch && fin recipe-unpack kanopi/saplings-content-types && fin recipe-unpack kanopi/saplings-component-types && fin recipe-unpack kanopi/saplings-component-base && fin recipe-unpack kanopi/saplings-content-base && fin recipe-unpack kanopi/saplings-media && fin recipe-unpack kanopi/imagemagick-configuration && fin recipe-unpack kanopi/saplings-theme && fin recipe-unpack kanopi/saplings-editorial
