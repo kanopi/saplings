@@ -23,6 +23,7 @@ nav:
     - Designer Documentation: designers.md
   - For Developers:
     - Developer Documentation: developers.md
+    - Dependencies: developers-dependencies.md
   - Recipe Architecture:
     - Introduction: recipes-introduction.md
 

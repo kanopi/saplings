@@ -67,24 +67,37 @@ Feature complete.
 ### Phase 2
 * Break Page and Post Content types into their own recipes.
 * Additional components as needed.
-* [kanopi/saplings-ai](https://github.com/kanopi/saplings-ai) - [WIP] Helpful AI functionality for content creators.
-* [kanopi/saplings-person](https://github.com/kanopi/saplings-person) - [WIP] Creates a Person content type and related configuration.
-* [kanopi/saplings-events](https://github.com/kanopi/saplings-events) -  [WIP] Configuration for Saplings Events 
-* [kanopi/saplings-demo-events](https://github.com/kanopi/saplings-demo-events) - [WIP] Demo content for Saplings Events
-* [kanopi/solr-search-pantheon-recipe](https://github.com/kanopi/solr-search-pantheon-recipe) - The goal is to configure Solr for Pantheon on a site that isn't going to use saplings.
+* [kanopi/saplings-ai](https://github.com/kanopi/saplings-ai) - [WIP] Helpful AI
+  functionality for content creators.
+* [kanopi/saplings-person](https://github.com/kanopi/saplings-person) - [WIP]
+  Creates a Person content type and related configuration.
+* [kanopi/saplings-events](https://github.com/kanopi/saplings-events) -  [WIP]
+  Configuration for Saplings Events
+* [kanopi/saplings-demo-events](https://github.com/kanopi/saplings-demo-events)
+- [WIP] Demo content for Saplings Events
+* [kanopi/solr-search-pantheon-recipe](https://github.com/kanopi/solr-search-pantheon-recipe)
+  - The goal is to configure Solr for Pantheon on a site that isn't going to use
+  saplings.
 
 ### Phase 3
 Investigate extending Drupal CMS' recipes.
 
 ### Other Kanopi Recipes:
-* [kanopi/saplings-domain](https://github.com/kanopi/saplings-domain) -  Installs and configures Domain modules.
-* [kanopi/saplings-demo-content](https://github.com/kanopi/saplings-demo-content) - Demo content for Saplings.
-* [kanopi/saplings-solr](https://github.com/kanopi/saplings-solr) - Configures a back-end and front-end Solr search customized for Saplings on Pantheon.
-* [kanopi/password-policy-90-days](https://packagist.org/packages/kanopi/password-policy-90-days) - Installs and configures Password Policy and sets a 90 day expiration default.
-* [kanopi/remote-video-youtube-lite](https://packagist.org/packages/kanopi/remote-video-youtube-lite) - Configures Remote Video Media entity to use Lite YouTube Embed.
+* [kanopi/saplings-domain](https://github.com/kanopi/saplings-domain) - Installs
+  and configures Domain modules.
+* [kanopi/saplings-demo-content](https://github.com/kanopi/saplings-demo-content)
+  - Demo content for Saplings.
+* [kanopi/saplings-solr](https://github.com/kanopi/saplings-solr) - Configures a
+  back-end and front-end Solr search customized for Saplings on Pantheon.
+* [kanopi/password-policy-90-days](https://packagist.org/packages/kanopi/password-policy-90-days)
+  - Installs and configures Password Policy and sets a 90 day expiration default.
+* [kanopi/remote-video-youtube-lite](https://packagist.org/packages/kanopi/remote-video-youtube-lite)
+  - Configures Remote Video Media entity to use Lite YouTube Embed.
 
 ### Other Saplings related modules
-* [kanopi/saplings_navbar](https://github.com/kanopi/saplings_navbar) - Creates a navbar pattern for Saplings that allows the parent to be a link and then have a dropdown indicator to access child menu items.
+* [kanopi/saplings_navbar](https://github.com/kanopi/saplings_navbar) - Creates
+a navbar pattern for Saplings that allows the parent to be a link and then have
+a dropdown indicator to access child menu items.
 
 ---
 
@@ -92,14 +105,16 @@ Investigate extending Drupal CMS' recipes.
 We'd love your help with testing, ideation, and development.
 
 ### Setting up a quick testing environment
-Decide on a name for your testing environment.  In this example, I will use `kanland`.
+Decide on a name for your testing environment.  In this example, I will use
+`kanland`.
 
 * Checkout kanopi/drupal-starter into it's own repo.
 * `git clone git@github.com:kanopi/drupal-starter.git kanland && cd kanland`
 * Open /.docksal/docksal.env in your editor.
 * Update row 28 `hostingsite="kanland"` and save.
 * Run `fin init`
-* The build will fail with the following message as we haven't installed Drupal yet. `Error: Class "Drupal\user\Entity\User" not found`
+* The build will fail with the following message as we haven't installed Drupal
+  yet. `Error: Class "Drupal\user\Entity\User" not found`
 * Run `fin drush si minimal -y && fin drush uli` to install Drupal and log in.
 * Click on the one-time-login to verify the minimal install happened.
 * Require this repository: `fin composer require kanopi/saplings:^1`
@@ -108,31 +123,25 @@ Decide on a name for your testing environment.  In this example, I will use `kan
 To reset after you have done some testing:
 
 * Run `fin init`
-* The build will fail with the following message as we haven't installed Drupal yet. `Error: Class "Drupal\user\Entity\User" not found`
+* The build will fail with the following message as we haven't installed Drupal
+  yet. `Error: Class "Drupal\user\Entity\User" not found`
 * Run `fin drush si minimal -y && fin drush uli` to install Drupal and log in.
 
 ### Requiring recipes
-Use composer the require the recipes needed.  We currently host on our packagist.
+Use composer the require the recipes needed. We currently host on our packagist.
 
 ### Applying and Unpacking recipes in Drupal
 To apply contrib/composer installed recipes, run the following commands:
 
 `fin recipe-apply recipe-name`
 
-Each recipe can have composer dependencies. "Unpacking" takes these dependencies from the recipe and applies them to the project's composer.json file.
+Each recipe can have composer dependencies. "Unpacking" takes these dependencies
+from the recipe and applies them to the project's composer.json file.
 
 To unpack contrib/composer installed recipes, run the following commands:
 
 `fin recipe-unpack recipe-name`
 
+## Dependencies
 
----
-
-Note: The Drupal core patch is experimental, but it is mainly additions.  If you don't want to have that on your production site, the good news is that you don't have to have patch after you've applied and unpacked your recipes.  You can simply remove the patch and update core as the recipes are now yours.
-
-
-## Dependency Graph
-
-<img width="1775" alt="saplings-graph" src="https://github.com/kanopi/saplings/assets/5177009/1f1c9c31-0a20-4e7f-8c76-aa0c108f6d59">
-
-Created using [JBZoo/Composer-Graph](https://github.com/JBZoo/Composer-Graph)
+See chart and list in [/docs/dependencies.md](/docs/dependencies.md)

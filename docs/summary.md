@@ -14,7 +14,9 @@
 - [Taxonomies](taxonomies.md)
 - [Designer Documentation](designers.md)
 - [Developer Documentation](developers.md)
+- [Developer Dependencies](developers-dependencies.md)
 - [Recipes Introduction](recipes-introduction.md)
+
 
 ## Add Ons
 
