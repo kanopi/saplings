@@ -15,6 +15,7 @@
 - [Designer Documentation](designers.md)
 - [Developer Documentation](developers.md)
 - [Recipes Introduction](recipes-introduction.md)
+- [Dependencies](dependencies.md)
 
 ## Add Ons
 

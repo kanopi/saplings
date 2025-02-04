@@ -19,6 +19,7 @@ nav:
       - Language Switcher: add-on-language-switcher.md
       - Mega Menu: add-on-mega-menu.md
       - Search: add-on-search.md
+    - Dependencies: dependencies.md
   - For Designers:
     - Designer Documentation: designers.md
   - For Developers:
