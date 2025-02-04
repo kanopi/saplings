@@ -68,31 +68,31 @@ Feature complete.
 * Break Page and Post Content types into their own recipes.
 * Additional components as needed.
 * [kanopi/saplings-ai](https://github.com/kanopi/saplings-ai) - [WIP] Helpful AI
-functionality for content creators.
+  functionality for content creators.
 * [kanopi/saplings-person](https://github.com/kanopi/saplings-person) - [WIP]
-Creates a Person content type and related configuration.
+  Creates a Person content type and related configuration.
 * [kanopi/saplings-events](https://github.com/kanopi/saplings-events) -  [WIP]
-Configuration for Saplings Events
+  Configuration for Saplings Events
 * [kanopi/saplings-demo-events](https://github.com/kanopi/saplings-demo-events)
 - [WIP] Demo content for Saplings Events
 * [kanopi/solr-search-pantheon-recipe](https://github.com/kanopi/solr-search-pantheon-recipe)
- - The goal is to configure Solr for Pantheon on a site that isn't going to use
- saplings.
+  - The goal is to configure Solr for Pantheon on a site that isn't going to use
+  saplings.
 
 ### Phase 3
 Investigate extending Drupal CMS' recipes.
 
 ### Other Kanopi Recipes:
 * [kanopi/saplings-domain](https://github.com/kanopi/saplings-domain) - Installs
-and configures Domain modules.
+  and configures Domain modules.
 * [kanopi/saplings-demo-content](https://github.com/kanopi/saplings-demo-content)
-- Demo content for Saplings.
+  - Demo content for Saplings.
 * [kanopi/saplings-solr](https://github.com/kanopi/saplings-solr) - Configures a
-back-end and front-end Solr search customized for Saplings on Pantheon.
+  back-end and front-end Solr search customized for Saplings on Pantheon.
 * [kanopi/password-policy-90-days](https://packagist.org/packages/kanopi/password-policy-90-days)
- - Installs and configures Password Policy and sets a 90 day expiration default.
+  - Installs and configures Password Policy and sets a 90 day expiration default.
 * [kanopi/remote-video-youtube-lite](https://packagist.org/packages/kanopi/remote-video-youtube-lite)
- - Configures Remote Video Media entity to use Lite YouTube Embed.
+  - Configures Remote Video Media entity to use Lite YouTube Embed.
 
 ### Other Saplings related modules
 * [kanopi/saplings_navbar](https://github.com/kanopi/saplings_navbar) - Creates
@@ -114,7 +114,7 @@ Decide on a name for your testing environment.  In this example, I will use
 * Update row 28 `hostingsite="kanland"` and save.
 * Run `fin init`
 * The build will fail with the following message as we haven't installed Drupal
-yet. `Error: Class "Drupal\user\Entity\User" not found`
+  yet. `Error: Class "Drupal\user\Entity\User" not found`
 * Run `fin drush si minimal -y && fin drush uli` to install Drupal and log in.
 * Click on the one-time-login to verify the minimal install happened.
 * Require this repository: `fin composer require kanopi/saplings:^1`
@@ -124,7 +124,7 @@ To reset after you have done some testing:
 
 * Run `fin init`
 * The build will fail with the following message as we haven't installed Drupal
-yet. `Error: Class "Drupal\user\Entity\User" not found`
+  yet. `Error: Class "Drupal\user\Entity\User" not found`
 * Run `fin drush si minimal -y && fin drush uli` to install Drupal and log in.
 
 ### Requiring recipes
