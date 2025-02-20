@@ -6,8 +6,7 @@ This recipe is designed to help start a highly configured Drupal project.
 
 Rather than one large Recipe that tries to do everything, we've broken it up
 into multiple sub-recipes.  This recipe installs them all, but you can also
-install the sub-recipes on their own (Once this [Drupal issue](https://www.drupal.org/project/distributions_recipes/issues/3390916)
- is resolved.).
+install the sub-recipes on their own.
 
 * [kanopi/gin-admin-experience](https://github.com/kanopi/gin-admin-experience)
 * [kanopi/saplings-base](https://github.com/kanopi/saplings-base)
