@@ -45,7 +45,12 @@ Apply a recipe to Drupal installed with a minimal profile.  See [below](#setting
 - Run `fin recipe-apply ../recipes/saplings` to apply this recipe.
 - Run the following command to unpack the dependencies from all kanopi/saplings recipes to the site project's composer.json file.
 ```
-fin recipe-unpack kanopi/saplings && fin recipe-unpack kanopi/gin-admin-experience && fin recipe-unpack kanopi/saplings-base && fin recipe-unpack kanopi/saplings-editorial && fin recipe-unpack kanopi/saplings-launch && fin recipe-unpack kanopi/saplings-content-types && fin recipe-unpack kanopi/saplings-component-types && fin recipe-unpack kanopi/saplings-component-base && fin recipe-unpack kanopi/saplings-content-base && fin recipe-unpack kanopi/saplings-media && fin recipe-unpack kanopi/imagemagick-configuration && fin recipe-unpack kanopi/saplings-theme && fin recipe-unpack kanopi/saplings-editorial && fin recipe-unpack kanopi/saplings-content-base-header && fin recipe-unpack kanopi/saplings-content-base-seo && fin recipe-unpack kanopi/saplings-events && fin recipe-unpack drupal/events && fin recipe-unpack drupal/events_calendar && fin recipe-unpack drupal/events_locations && fin recipe-unpack kanopi/imagemagick-configuration && fin recipe-unpack drupal/locations && fin recipe-unpack kanopi/saplings-full-html-editor && fin recipe-unpack drupal/tour_core
+fin recipe-unpack kanopi/saplings && fin recipe-unpack kanopi/gin-admin-experience && fin recipe-unpack kanopi/saplings-base && fin recipe-unpack kanopi/saplings-editorial && fin recipe-unpack kanopi/saplings-launch && fin recipe-unpack kanopi/saplings-content-types && fin recipe-unpack kanopi/saplings-component-types && fin recipe-unpack kanopi/saplings-component-base && fin recipe-unpack kanopi/saplings-content-base && fin recipe-unpack kanopi/saplings-media && fin recipe-unpack kanopi/imagemagick-configuration && fin recipe-unpack kanopi/arbor-theme && fin recipe-unpack kanopi/saplings-editorial && fin recipe-unpack kanopi/saplings-fields-header && fin recipe-unpack kanopi/saplings-fields-seo && fin recipe-unpack kanopi/saplings-full-html-editor && fin recipe-unpack drupal/tour_core
+
+If you installed the events recipe, include following lines in your unpack command as well.
+
+&& fin recipe-unpack kanopi/saplings-events && fin recipe-unpack drupal/events && fin recipe-unpack drupal/events_calendar && fin recipe-unpack drupal/events_locations && fin recipe-unpack kanopi/imagemagick-configuration && fin recipe-unpack drupal/locations
+
 ```
 - Export configuration.
 
