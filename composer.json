@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "drupal/core": ">=10.4",
+        "drupal/core": "^10.4 || ^11",
         "kanopi/gin-admin-experience": "^1",
         "kanopi/saplings-base": "^1",
         "kanopi/saplings-content-types": "^2",
