@@ -14,7 +14,7 @@
         "drupal/core": "^10.4 || ^11",
         "kanopi/gin-admin-experience": "^1",
         "kanopi/saplings-base": "^1",
-        "kanopi/saplings-content-types": "^2",
+        "kanopi/saplings-content-types": "^2.0.0@stable",
         "kanopi/saplings-editorial": "^1",
         "kanopi/saplings-launch": "^1",
         "kanopi/saplings-tests": "^1"
