@@ -40,16 +40,7 @@ Patterns can be used by configuring the entire entity to display as a pattern, s
 
 
 
-<p id="gdcalert24" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to assets/images/image24.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert25">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](assets/images/image24.png "image_tooltip")
-
-
 In this example, the Page Teaser is set to using a Card layout.
-
-<p id="gdcalert25" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to assets/images/image25.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert26">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![alt_text](assets/images/image25.png "image_tooltip")
 
@@ -66,25 +57,11 @@ Under Pattern Settings, choose your desired layout. Once you have saved the chan
 
 
 
-<p id="gdcalert26" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to assets/images/image26.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert27">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](assets/images/image26.png "image_tooltip")
-
-
-
 ### Configuring Fields as a pattern
 
 Patterns can also be used to display fields as a pattern, like can be seen here `/admin/structure/paragraphs_type/sa_carousel/display`
 
 [Displaying Patterns and Field Templates - Watch Video](https://www.loom.com/share/32b8cb87b1fc450a8fe27a51275fa709)
-
-
-
-<p id="gdcalert27" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to assets/images/image27.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert28">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](assets/images/image27.gif "image_tooltip")
 
 
 
@@ -101,9 +78,6 @@ Another way to display something as a pattern is to do so as a field group. To d
 
 [Manage display | Drush Site-Install - 7 March 2024 - Watch Video](https://www.loom.com/share/e73273e5362941e7b76c2276a8a58719)
 
-
-
-<p id="gdcalert28" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to assets/images/image28.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert29">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](assets/images/image28.gif "image_tooltip")
@@ -132,7 +106,3 @@ To quickly convert your [HEX variables to RGB](https://www.rapidtables.com/conve
 
 
 
-<p id="gdcalert29" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to assets/images/image29.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert30">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](assets/images/image29.gif "image_tooltip")
