@@ -58,8 +58,6 @@ if (window.matchMedia("(max-width: {{ block_config['breakpoint']}}px)").matches)
 
 5. Remove the navbar pattern from the page.html.twig template and just print the region you put the TB megamenu in
 
-![alt_text](assets/images/image3.png "image_tooltip")
-
 6. Here is the SCSS used to style the tbm menu on SettleIn
 
 ```
